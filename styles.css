@@ -1,5 +1,5 @@
 .marg {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .marg-s {
@@ -7,5 +7,9 @@
 }
 .jumbotron {
     background-color: #edf3ed;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.container {
+    text-align: justify;
 }
