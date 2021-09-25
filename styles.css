@@ -1,3 +1,11 @@
-.row {
+.marg {
+    margin-bottom: 50px;
+}
+
+.marg-s {
+    margin-bottom: 30px;
+}
+.jumbotron {
+    background-color: #edf3ed;
     margin-bottom: 50px;
 }
