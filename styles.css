@@ -1,30 +1,65 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    /*    background-image: url("idust.png");*/
+    background-position: center;
+    background-color: #FFF;
 }
-
-.jumbotron {
-    background-color: #edf3ed;
-    margin-bottom: 40px;
+.logo {
+    width: 20%;
+    margin-bottom: 30px;
 }
-
 .container {
-    text-align: justify;
+    margin-bottom: 80px;
 }
-
-.row {
-    margin: auto;
+h1 {
+    text-align: left;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
 }
-
-.col-xs-6 {
-    padding-right: 0px;
-    padding-left: 0px;
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 24px
 }
-
-img {
-    padding: 2px;
+.col-btn {
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px;
 }
-
+.col-btn-d {
+    border: 2px solid #000;
+    background-color: #1d1d1b;
+    border-color: #1d1d1b;
+    color: #fff;
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px;
+}
+.col-btn-c {
+    border: 2px solid #ff490c;
+    background-color: #ff490c;
+    color: #FFF;
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px;
+}
+.col-md-6 {
+    padding: 15px;
+}
+.ex {
+    padding: 10px;
+}
 .col-sm-12 {
     margin-top: 50px;
+}
+.orange {
+    color: #ff490c;
+}
+a {
+    text-decoration: none;
 }
