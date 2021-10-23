@@ -1,0 +1,17 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+}
+.logo {
+    width: 20%;
+}
+img {
+    width: 100%
+}
+.left {
+    text-align: right;
+}
+.row {
+    margin-bottom: 20px;
+}
