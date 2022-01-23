@@ -1,13 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    /*    background-image: url("idust.png");*/
-    background-position: center;
     background-color: #FFF;
 }
-.logo {
-    width: 20%;
-    margin-bottom: 30px;
+.header {
+    margin-top: 25px;
 }
 .container {
     margin-bottom: 80px;
@@ -18,6 +15,10 @@ h1 {
     margin-bottom: 10px;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
+}
+.login{
+    margin-top: 12px;
+    margin-bottom: 15px;
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -41,8 +42,8 @@ h2 {
     padding: 20px;
 }
 .col-btn-c {
-    border: 2px solid #ff490c;
-    background-color: #ff490c;
+    border: 2px solid #4d3cbf;
+    background-color: #4d3cbf;
     color: #FFF;
     border-radius: 8px;
     height: 100%;
@@ -51,15 +52,11 @@ h2 {
 .col-md-6 {
     padding: 15px;
 }
-.ex {
-    width: 100%;
-    padding-bottom: 20px;
+.green {
+    color: #a5fed2;
 }
-.col-sm-12 {
-    margin-top: 50px;
-}
-.orange {
-    color: #ff490c;
+.purple {
+    color: #4d3cbf;
 }
 a {
     text-decoration: none;
@@ -68,13 +65,4 @@ a {
 a:hover {
     text-decoration: none;
     color: #fff;
-}
-.rotated {
-    transform: rotate(90deg);
-}
-.modaltriggre {
-    cursor: pointer;
-}
-.modal-header {
-    border-bottom: 0px;
 }
