@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
     background-color: #FFF;
 }
 .header {
@@ -13,24 +13,24 @@ h1 {
     text-align: left;
     color: #000;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 .login{
-    margin-top: 12px;
-    margin-bottom: 15px;
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    font-size: 24px
+    font-size: 40px;
+    margin-bottom: 25px;
 }
 .col-btn {
     border: 2px solid #000;
     color: #000;
     border-radius: 8px;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
 }
 .col-btn-d {
     border: 2px solid #000;
@@ -39,7 +39,7 @@ h2 {
     color: #fff;
     border-radius: 8px;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
 }
 .col-btn-c {
     border: 2px solid #4d3cbf;
@@ -47,7 +47,7 @@ h2 {
     color: #FFF;
     border-radius: 8px;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
 }
 .col-md-6 {
     padding: 15px;
