@@ -1,0 +1,78 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: #FFF;
+    text-align: justify;
+}
+.header {
+    margin-top: 25px;
+}
+.container {
+    margin-bottom: 80px;
+}
+h1 {
+    text-align: left;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.login{
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.col-btn {
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 8px;
+    height: 100%;
+    padding: 40px;
+}
+.col-btn-d {
+    border: 2px solid #000;
+    background-color: #1d1d1b;
+    border-color: #1d1d1b;
+    color: #fff;
+    border-radius: 8px;
+    height: 100%;
+    padding: 40px;
+}
+.col-btn-c {
+    border: 2px solid #4d3cbf;
+    background-color: #4d3cbf;
+    color: #FFF;
+    border-radius: 8px;
+    height: 100%;
+    padding: 40px;
+}
+.col-md-6 {
+    padding: 15px;
+}
+.green {
+    color: #a5fed2;
+}
+.purple {
+    color: #4d3cbf;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.col-md-12 {
+	margin-bottom: 10px;
+}
+
+.appimg {
+	width: 100%;
+	padding-bottom: 15px;
+}
