@@ -1,68 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    background-color: #FFF;
+    text-align: center;
 }
-.header {
-    margin-top: 25px;
+
+img {
+    width: 60%;
+    margin-top: 50px;
+    filter: invert(100%);
 }
-.container {
-    margin-bottom: 80px;
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
-h1 {
-    text-align: left;
+
+.centered {
     color: #000;
-    margin-bottom: 10px;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
-.login{
-}
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 40px;
-    margin-bottom: 25px;
-}
-.col-btn {
-    border: 2px solid #000;
-    color: #000;
-    border-radius: 8px;
-    height: 100%;
-    padding: 40px;
-}
-.col-btn-d {
-    border: 2px solid #000;
-    background-color: #1d1d1b;
-    border-color: #1d1d1b;
-    color: #fff;
-    border-radius: 8px;
-    height: 100%;
-    padding: 40px;
-}
-.col-btn-c {
-    border: 2px solid #4d3cbf;
-    background-color: #4d3cbf;
-    color: #FFF;
-    border-radius: 8px;
-    height: 100%;
-    padding: 40px;
-}
-.col-md-6 {
-    padding: 15px;
-}
-.green {
-    color: #a5fed2;
-}
-.purple {
-    color: #4d3cbf;
-}
-a {
-    text-decoration: none;
-    color: #FFF;
-}
-a:hover {
-    text-decoration: none;
-    color: #fff;
+    font-size: 18vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-family: 'Abril Fatface', cursive;
 }
