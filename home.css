@@ -1,0 +1,29 @@
+body {
+	height: 100vh;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 25px;
+	color: #fff;
+}
+
+.holder {
+	background-color: #000;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	width: 100%;
+}
+
+.max-700 {
+	max-width: 70vw;
+}
