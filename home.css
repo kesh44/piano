@@ -49,3 +49,9 @@ a {
 .bold {
 	font-weight: bold;
 }
+
+iframe {
+    border: 0;
+    height: 70vh;
+    width: 100%;
+}
