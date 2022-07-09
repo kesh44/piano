@@ -20,6 +20,7 @@ h1 {
 	font-weight: bold;
 	text-align: center;
 	padding: 8px;
+	border-bottom: 2px solid rgba(0,0,0,.125);
 }
 
 .free {
@@ -51,10 +52,10 @@ h1 {
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
 	width: 100%;
 	border-radius: 5px;
-	color: #000;
-    background-color: #cacaca;
-    border-color: #cecece;
-    font-weight: bold;
+	color: #fff;
+	background-color: #3f51b5;
+	border-color: #2c3d9b;
+	font-weight: bold;
 }
 
 .modal-toggle {
