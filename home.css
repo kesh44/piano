@@ -48,7 +48,7 @@ h1 {
 	height: 100%;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
 	width: 100%;
 	border-radius: 5px;
 	color: #000;
