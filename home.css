@@ -17,14 +17,19 @@ h1 {
 }
 
 .card-header {
-    font-weight: bold;
-    text-align: center;
-    padding: 8px;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px;
 }
 
 .free {
 	background: #a8eabf;
-    color: #0d9212;
+	color: #0d9212;
+}
+
+.paid {
+	background: #a8e7ea;
+	color: #2196f3;
 }
 
 .card-body {
@@ -46,6 +51,10 @@ h1 {
 .btn-primary {
 	width: 100%;
 	border-radius: 5px;
+	color: #000;
+    background-color: #cacaca;
+    border-color: #cecece;
+    font-weight: bold;
 }
 
 .modal-toggle {
@@ -72,18 +81,18 @@ a {
 }
 
 iframe {
-    border: 0;
-    height: 70vh;
-    width: 100%;
+	border: 0;
+	height: 70vh;
+	width: 100%;
 }
 
 .below-button {
-    margin-top: 10px;
-    margin-bottom: 0;
+	margin-top: 0px;
+	margin-bottom: 15px;
 }
 
 .mt-50 {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .nav-container {
