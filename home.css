@@ -20,12 +20,11 @@ h1 {
 	font-weight: bold;
 	text-align: center;
 	padding: 8px;
-	border-bottom: 2px solid rgba(0,0,0,.125);
 }
 
 .free {
-	background: #a8eabf;
-	color: #0d9212;
+	background: #a5fed2;
+	color: #2ea162;
 }
 
 .paid {
@@ -53,7 +52,7 @@ h1 {
 	width: 100%;
 	border-radius: 5px;
 	color: #fff;
-	background-color: #3f51b5;
+	background-color: #4d3cbf;
 	border-color: #2c3d9b;
 	font-weight: bold;
 }
