@@ -108,11 +108,16 @@ iframe {
 }
 
 
+.pulse {
+	display: inline-block;
+}
+
+
 .spin {
 	display: inline-block;
-    -webkit-animation:spin 3s linear infinite;
-    -moz-animation:spin 3s linear infinite;
-    animation:spin 3s linear infinite;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
 }
 
 @-moz-keyframes spin { 
@@ -126,13 +131,13 @@ iframe {
         -webkit-transform: rotate(0deg);
     }
     25% {
-        -webkit-transform: rotate(15deg);
+        -webkit-transform: rotate(10deg);
     }
     50% {
         -webkit-transform: rotate(0deg);
     }
     75% {
-        -webkit-transform: rotate(-15deg);
+        -webkit-transform: rotate(-10deg);
     }
     100% {
         -webkit-transform: rotate(0deg);
