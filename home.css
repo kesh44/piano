@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-	font-size: 200%;
+	font-size: 150%;
 }
 
 .col-md-6 {
@@ -58,12 +58,15 @@ h1 {
 }
 
 .btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
-	border-radius: 5px;
+	border-radius: 3px;
+	background-color: #ffc107;
+    border-color: #ffeb3b;
+    color: black;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 3px;
 	color: #fff;
 	background-color: #4d3cbf;
 	border-color: #2c3d9b;
