@@ -111,6 +111,9 @@ iframe {
 	padding: 0px 10px;
 }
 
+video {
+	width: 100%;
+}
 
 .pulse {
 	display: inline-block;

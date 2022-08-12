@@ -14,67 +14,51 @@
 </head>
 
 <body>
-<!--   <nav class="navbar fixed-top navbar-light bg-light">
-    <div class="container nav-container">
-      <a class="navbar-brand">Kesh</a>
-      <a class="btn btn-outline-success" href="https://www.youtube.com/channel/UCBnkkHAGS87i91ofib3JwyQ?sub_confirmation=1" role="button">Subscribe</a>
-    </div>
-  </nav> -->
-
   <div class="container">
     <div class="vh-100 d-flex justify-content-center align-items-center">
 
       <div class="child">
         <div class="text-center">
           <a class="btn btn-danger my-4" href="https://bit.ly/kesh-sub" target="_blank" role="button">Subscribe to Kesh <div class="spin">&#127774;</div></a>
-
         </div>
 
         <div class="row">
           <div class="col-lg-4">
             <div class="holderr">
               <div class="card">
-                <!-- <div class="card-header free">Free</div> -->
                 <div class="card-body d-flex flex-column text-left">
                   <h1 class="card-title">MIDI files <div class="pulse">&#128266;</div></h1>
-                  <h6 class="card-subtitle mb-2 text-muted">free!</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Free for subscribers</h6>
                   <p class="card-text">MIDI files for all of my piano tutorials are available to download for free.</p>
                   <p>You can use them for any personal projects. Credit is always appreciated!</p>
-                  <a class="btn btn-primary mt-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSd3eFeOiCUbiglFBq24Hf0KLfZYaR_ah69DIS2NZcweWvZM5w/viewform?usp=sf_link" target="_blank" role="button">Get a MIDI file</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="holderr">
-              <div class="card">
-                <!-- <div class="card-header paid">$2.99</div> -->
-                <div class="card-body d-flex flex-column">
-                  <h1 class="card-title">Sheet music <div class="pulse">&#127925;</div></h1>
-                  <h6 class="card-subtitle mb-2 text-muted">$2.99</h6>
-                  <p>Please note that all of my sheet music is the same length as my tutorials on YouTube, not always the full song.</p>
-
-                  <!-- <p class="card-text">Some of my sheet music is available to buy on Musicnotes.</p> -->
-                  <a class="btn btn-primary mt-auto" href="https://bit.ly/kesh-musicnotes" target="_blank" role="button">Browse sheet music</a>
-
-<!--                   <div class="text-center">
-                    <p class="modal-toggle below-button" data-bs-toggle="modal" data-bs-target="#exampleModal">The song I want isn't on Musicnotes &#129300;</p>
-                  </div> -->
-
-                  <p class="card-text mt-3">If the song you want isn't on Musicnotes, you can request it here:</p>
-                  <a class="btn btn-primary mt-auto" href="https://bit.ly/kesh-supp" target="_blank" role="button">Request sheet music</a>
-                  
+                  <!-- <a class="btn btn-primary mt-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSd3eFeOiCUbiglFBq24Hf0KLfZYaR_ah69DIS2NZcweWvZM5w/viewform?usp=sf_link" target="_blank" role="button">Get a MIDI file</a> -->
 
 
 
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Get a MIDI file
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
                       <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">How to get a MIDI file</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
                         <div class="modal-body">
-                          <p>Some of my piano covers are not published on Musicnotes yet due to licensing constraints.</p>
-                          <p class="bold">However, I might be able to send you a draft version of my sheet music if it's not available on Musicnotes.com</p>
-                          <p>To enquire, send me an email at keshpianomusic@gmail.com with the subject line 'Sheet music request'.</p>
+                          <ol>
+                            <li>Go to my <a href="https://www.youtube.com/channel/UCBnkkHAGS87i91ofib3JwyQ" class="link-dark text-red">channel page</a></li>
+                            <li>Subscribe, wait for a few seconds &#8987; then refresh the page</li>
+                            <li>Click on the 'thanks for subscribing' video and check the description :)</li>
+                          </ol>
+
+                          <p>Proof that it works &#128071;</p>
+                          <video class="main py-2" autoplay muted loop>
+                            <source src="subscribe.mov" type="video/mp4"></source>
+                          </video>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -82,20 +66,36 @@
                       </div>
                     </div>
                   </div>
+
+
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-4">
             <div class="holderr">
               <div class="card">
-                <!-- <div class="card-header paid">From $5.00</div> -->
                 <div class="card-body d-flex flex-column">
-                  <h1 class="card-title">Song requests <div class="pulse">&#10024;</div></h1>
-                  <h6 class="card-subtitle mb-2 text-muted">choose my next video</h6>
-                  <p class="card-text">If you have any song recommendations, I'd love to hear them.</p>
-                  <p>In particular, I'm looking for songs that will get lots of views &#128523; Please help me find good songs to cover! If your request gets 1000 views within the first week, I will send you the sheet music for free.</p>
-                  <a class="btn btn-primary mt-auto" href="https://bit.ly/3aklWUG" target="_blank" role="button">Request a tutorial</a>
+                  <h1 class="card-title">Sheet music <div class="pulse">&#127925;</div></h1>
+                  <h6 class="card-subtitle mb-2 text-muted">$2.99</h6>
+                  <p>Please note that all of my sheet music is the same length as my tutorials on YouTube, not always the full song.</p>
+                  <a class="btn btn-primary mt-auto" href="https://bit.ly/kesh-musicnotes" target="_blank" role="button">Browse sheet music</a>
+                  <!-- <p class="card-text mt-3">If the song you want isn't on Musicnotes, you can request it here:</p> -->
+                  <!-- <a class="btn btn-primary mt-auto" href="https://bit.ly/kesh-supp" target="_blank" role="button">Request sheet music</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="holderr">
+              <div class="card">
+                <div class="card-body d-flex flex-column">
+                  <h1 class="card-title">Piano app <div class="pulse">&#10024;</div></h1>
+                  <h6 class="card-subtitle mb-2 text-muted">Coming soon...</h6>
+                  <p class="card-text">I'm making a piano MIDI player app to rival Synthesia. It will generate the same falling-notes visualisation and offer more features for a fraction of the price.</p>
+                  <a class="btn btn-primary mt-auto" href="#" role="button">Check again soon</a>
                 </div>
               </div>
             </div>
