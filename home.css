@@ -145,3 +145,14 @@ video {
         -webkit-transform: rotate(0deg);
     }   
 }
+
+.pp {
+	border-radius: 50%;
+	max-width: 100px;
+}
+
+h3 {
+	font-size: 1rem;
+    font-weight: 400;
+    color: #606060;
+}
