@@ -21,6 +21,11 @@ h1 {
 	background-color: #eee;
 }
 
+.card-dark {
+	background-color: #121212;
+	color: #fff;
+}
+
 .child {
 	margin: auto;
 }
@@ -151,14 +156,14 @@ video {
 	max-width: 100px;
 }
 
-h3 {
+h3 > a {
 	font-size: 1rem;
     font-weight: 400;
     color: #606060;
 }
 
 .appinuse {
-	filter: drop-shadow(5px 5px 5px #ccc);
+	filter: drop-shadow(5px 5px 5px #ddd);
 }
 
 .list-group-item {
