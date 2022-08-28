@@ -12,7 +12,7 @@ h1 {
 }
 
 .col-md-6 {
-	padding: 0px;
+	/*padding: 0px;*/
 }
 
 .card {
@@ -155,4 +155,13 @@ h3 {
 	font-size: 1rem;
     font-weight: 400;
     color: #606060;
+}
+
+.appinuse {
+	filter: drop-shadow(5px 5px 5px #ccc);
+}
+
+.list-group-item {
+	background-color: #eee;
+	border: 1px solid #aaa;
 }
