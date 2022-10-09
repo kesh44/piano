@@ -2,9 +2,14 @@ html {
 	height: 100%;
 }
 
+.hover:hover {
+	opacity: 0.75;
+}
+
 body {
 	font-size: 100%;
 	height: 100%;
+	background-color: #FAF9F6;
 }
 
 h1 {
@@ -62,20 +67,16 @@ h1 {
 	height: 100%;
 }
 
-.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
-	border-radius: 3px;
-	background-color: #ffc107;
-    border-color: #ffeb3b;
-    color: black;
-}
-
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
 	width: 100%;
 	border-radius: 3px;
 	color: #fff;
 	background-color: #4d3cbf;
 	border-color: #2c3d9b;
 	font-weight: bold;
+	outline: none;
+	border: none;
+	box-shadow: none;
 }
 
 .modal-toggle {
@@ -91,11 +92,6 @@ h1 {
 	font-weight: bold;
 }
 
-iframe {
-	border: 0;
-	height: 70vh;
-	width: 100%;
-}
 
 .below-button {
 	margin-top: 0px;
@@ -103,22 +99,9 @@ iframe {
 	color: #777;
 }
 
-.mt-50 {
-	margin-top: 10px;
-}
-
-.nav-container {
-	padding: 0px 10px;
-}
-
 video {
 	width: 100%;
 }
-
-.pulse {
-	display: inline-block;
-}
-
 
 .spin {
 	display: inline-block;
