@@ -17,6 +17,10 @@ h1 {
 	font-size: 150%;
 }
 
+h3 {
+	color: #424874;
+}
+
 .b {
 	/*color: #7895B2;*/
 	font-weight: 600;
@@ -172,4 +176,9 @@ h3 > a {
 
 .w-80 {
 	width: 80%;
+}
+
+.link-dark {
+	cursor: pointer;
+	color: black;
 }
