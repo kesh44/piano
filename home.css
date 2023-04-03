@@ -9,8 +9,8 @@ html {
 body {
 	font-size: 100%;
 	height: 100%;
-	background-color: #F4EEFF; /*#######*/
-	font-family: 'Kanit', sans-serif;
+	background-color: #F4EEFF;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -125,33 +125,33 @@ video {
 
 .spin {
 	display: inline-block;
-    -webkit-animation:spin 2s linear infinite;
-    -moz-animation:spin 2s linear infinite;
-    animation:spin 2s linear infinite;
+	-webkit-animation:spin 2s linear infinite;
+	-moz-animation:spin 2s linear infinite;
+	animation:spin 2s linear infinite;
 }
 
 @-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
+	100% { -moz-transform: rotate(360deg); } 
 }
 @-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
+	100% { -webkit-transform: rotate(360deg); } 
 }
 @keyframes spin { 
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    25% {
-        -webkit-transform: rotate(10deg);
-    }
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    75% {
-        -webkit-transform: rotate(-10deg);
-    }
-    100% {
-        -webkit-transform: rotate(0deg);
-    }   
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(10deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+	}
+	75% {
+		-webkit-transform: rotate(-10deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	}   
 }
 
 .pp {
@@ -161,8 +161,8 @@ video {
 
 h3 > a {
 	font-size: 1rem;
-    font-weight: 400;
-    color: #606060;
+	font-weight: 400;
+	color: #606060;
 }
 
 .appinuse {

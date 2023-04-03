@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="home.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -28,9 +28,11 @@
           <a href="https://www.youtube.com/c/keshhh/featured">
             <img src="pp.jpg" class="pp hover mb-2 mt-2">
           </a>
-          <h2 class="mb-2 mt-2">Kesh</h2>
+          <h2 class="mb-2 mt-2 b">Kesh</h2>
           <p class="mb-3">
-            <a class="link-dark hover" href="https://www.youtube.com/channel/UCBnkkHAGS87i91ofib3JwyQ" target="_blank"><span class="b">YouTube</span></a>
+            <a class="link-dark hover" href="https://www.youtube.com/channel/UCBnkkHAGS87i91ofib3JwyQ" target="_blank"><i class="bi bi-youtube"></i></a>
+
+            <a class="link-dark hover" href="https://midi.keshpianomusic.com/" target="_blank"><i class="bi bi-robot"></i></a>
           </p>
         </div>
         <div class="row g-0">
@@ -38,14 +40,13 @@
             <div class="holderr">
               <div class="card">
                 <div class="card-body d-flex flex-column text-left">
-                  <h1 class="card-title mb-4">my MIDI files <i class="bi bi-file-earmark-arrow-down-fill"></i></h1>
-                  <!-- <h6 class="card-subtitle mb-2 text-muted">Free for subscribers</h6> -->
+                  <h1 class="card-title mb-4 b">MIDI Files</h1>
                   <p class="card-text">MIDI files for all of my piano covers are available to download <span class="b">for free</span>.</p>
                   <p>You can use them for any personal project. Credit is always appreciated!</p>
 
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn hover btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    get a MIDI file
+                  <button type="button" class="btn hover btn-primary mt-auto b" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Get MIDI files
                   </button>
 
                   <!-- Modal -->
@@ -79,122 +80,34 @@
             </div>
           </div>
 
-
           <div class="col-lg-4">
             <div class="holderr">
               <div class="card">
                 <div class="card-body d-flex flex-column">
-                  <h1 class="card-title mb-4">audio-to-MIDI <i class="bi bi-stars"></i></h1>
-                  <p>Sometimes it's hard to get MIDI files, so I've created an affordable audio-to-MIDI converter which can generate an accurate MIDI of any piano song, cover or tutorial.</p>
-                  <p>It's available on my private Discord server (via Patreon). I hope to see you there!</p>
-
-
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <div class="row g-0">
-
-                            <div class="col-12 text-center mb-3">
-                              <h3 class="b">audio-to-MIDI examples</h3>
-                            </div>
-
-                            <div class="col-12">
-                              <p>The following examples demonstrate the performance of the audio-to-MIDI converter. The output is not perfect, but it accurately captures the chords and tempo of the original, and can be used as a good starting point to fine tune and make corrections.</p>
-                            </div>
-
-                            <div class="col-12 text-center">
-                              <p class="b">Where Is My Mind? by Pixies</p>
-                            </div>
-
-                            <div class="col-12 bg-low text-center">
-                              <div class="row g-0">
-                                <div class="col-md-12 py-2">
-                                  <p>input audio <i class="bi bi-music-note"></i></p>
-                                  <audio controls>
-                                    <source src="where is my mind input.mp3" type="audio/mpeg"></source>
-                                    Your browser does not support the audio element.
-                                  </audio>
-                                </div>
-                                <div class="col-md-12 py-2 bg-mid">
-                                  <p>output midi <i class="bi bi-file-music-fill"></i></p>
-                                  <audio controls>
-                                    <source src="where is my mind output.mp3" type="audio/mpeg"></source>
-                                    Your browser does not support the audio element.
-                                  </audio>
-                                  <p class="mt-2"><a class="link-dark" href="where is my mind.mid">download</a> <i class="bi bi-file-arrow-down-fill"></i></p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-12 text-center mt-4 mb-2">
-                              <p class="b">Chamber of Reflection by Mac DeMarco</p>
-                            </div>
-
-                            <div class="col-12 bg-low text-center">
-                              <div class="row g-0">
-                                <div class="col-md-12 py-2">
-                                  <p>input audio <i class="bi bi-music-note"></i></p>
-                                  <audio controls>
-                                    <source src="chamber of reflection input.mp3" type="audio/mpeg"></source>
-                                    Your browser does not support the audio element.
-                                  </audio>
-                                </div>
-                                <div class="col-md-12 py-2 bg-mid">
-                                  <p>output midi <i class="bi bi-file-music-fill"></i></p>
-                                  <audio controls>
-                                    <source src="chamber of reflection output.mp3" type="audio/mpeg"></source>
-                                    Your browser does not support the audio element.
-                                  </audio>
-                                  <p class="mt-2"><a class="link-dark" href="chamber of reflection.mid">download</a> <i class="bi bi-file-arrow-down-fill"></i></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn hover btn-primary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <a class="btn hover btn-primary mt-auto" href="" role="button" onclick="myFunction()">Copy my email address <i class="bi bi-clipboard"></i></a> http://bit.ly/40NV0SJ -->
-                  <a class="btn hover btn-primary mt-auto" href="https://midi.keshpianomusic.com/" role="button">learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4">
-            <div class="holderr">
-              <div class="card">
-                <div class="card-body d-flex flex-column">
-                  <h1 class="card-title mb-4">my sheet music <i class="bi bi-music-note-beamed"></i></h1>
-                  <p>Sheets are available to purchase on Musicnotes. Unfortunately, some songs aren't currently listed because of lisencing issues - I'm working to resolve this soon!</p>
+                  <h1 class="card-title mb-4 b">Sheet Music</h1>
+                  <p>Sheets are available to purchase on Musicnotes. Unfortunately, some songs aren't yet available because of lisencing issues. I'm working to resolve this soon!</p>
                   <p>Please note that all of my sheet music is the same length as my cover, not always the full song.</p>
-                  <a class="btn hover btn-primary mt-auto" href="https://bit.ly/kesh-notes" target="_blank" role="button">go to Musicnotes</a>
+                  <a class="btn hover btn-primary mt-auto b" href="https://bit.ly/kesh-notes" target="_blank" role="button">Visit Musicnotes.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="holderr">
+              <div class="card">
+                <div class="card-body d-flex flex-column">
+                  <h1 class="card-title mb-4 b">AI-powered MIDI converter <i class="bi bi-robot"></i></h1>
+                  <p>Not all creators share their MIDI files, so I've created an affordable audio-to-MIDI converter which can generate an accurate MIDI of any piano song.</p>
+                  <p>It's available on my Patreon. Check it out!</p>
+                  <a class="btn hover btn-primary mt-auto b" href="https://midi.keshpianomusic.com/" role="button">Listen to examples</a>
                 </div>
               </div>
             </div>
           </div>
 
 
-<!--           <div class="col-lg-4">
-            <div class="holderr">
-              <div class="card">
-                <div class="card-body d-flex flex-column">
-                  <h1 class="card-title mb-4">Sheet Music <i class="bi bi-music-note-beamed"></i></h1>
-                  <p>Please note that all of my sheet music is the same length as my cover, not the full song.</p>
-                  <p>Sheet music for my piano covers is available to purchase on my store!</p>
-                  <a class="btn hover btn-primary mt-auto" href="https://keshpianomusic.gumroad.com/l/getsheetmusic" target="_blank" role="button">Buy now</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
+
 
 
         </div> <!-- row -->
