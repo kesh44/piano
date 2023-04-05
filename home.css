@@ -3,36 +3,25 @@ html {
 
 }
 
-.hover:hover {
-	opacity: 0.75;
-}
-
 body {
 	font-size: 100%;
 	height: 100%;
-	background-image: url("art.png");
-	background-position: center;
-	background-size: cover;
-	background-color: #96a8b4;
-	font-family: 'Open Sans', sans-serif;
+	background-color: #fafafa;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
 	font-size: 150%;
 }
 
-h3 {
-	color: #424874;
-}
-
-.b {
-	font-weight: 600;
+.heavy {
+	font-weight: 700;
 }
 
 .card {
 	height: 100%;
 	border: 0px;
-	background-color: #ffffffe6
+	background-color: #fff
 }
 
 .card-dark {
@@ -48,42 +37,68 @@ h3 {
 	font-weight: bold;
 	text-align: center;
 	padding: 8px;
-}
-
-.free {
-	background: #a5fed2;
-	color: #2ea162;
-}
-
-.paid {
-	background: #a8e7ea;
-	color: #2196f3;
+	border-bottom: 0px;
+	background-color: rgb(84 223 114 / 21%);
 }
 
 .card-body {
 	padding: 25px;
 }
 
-.holderr {
-	padding: 10px;
-	height: 100%;
+.btn {
+	padding: 12px 0px;
 }
 
-.holder {
-	background-color: #ddd;
-/*	border-radius: 8px;*/
-padding: 25px;
-height: 100%;
+.btn-label {
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
 }
+
+.btn-secondary {
+	display: block;
+	padding: 0px;
+}
+
+.btn-yt {
+	color: black;
+	background-color: #FF0000a1;
+}
+
+.btn-yt:hover {
+	color: black;
+	background-color: #FF0000;
+}
+
+.btn-di {
+	color: black;
+	background-color: #7289DAa1;
+}
+
+.btn-di:hover {
+	color: black;
+	background-color: #7289DA;
+}
+
+.btn-ai {
+	color: black;
+	background-color: #8BC34Aa1;
+}
+
+.btn-ai:hover {
+	color: black;
+	background-color: #8BC34A;
+}
+
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
 	width: 100%;
 	color: #fff;
-	background-color: #000; /*#########*/
+	background-color: #070707ab;
 	outline: none;
 	border: none;
 	box-shadow: none;
-	padding: 9px;
 }
 
 .modal-toggle {
@@ -119,11 +134,29 @@ video {
 	width: 100%;
 }
 
+.shadoww {
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
 .spin {
 	display: inline-block;
-	-webkit-animation:spin 2s linear infinite;
-	-moz-animation:spin 2s linear infinite;
-	animation:spin 2s linear infinite;
+	-webkit-animation:spin 5s linear infinite;
+	-moz-animation:spin 5s linear infinite;
+	animation:spin 5s linear infinite;
+}
+
+.spin2 {
+	display: inline-block;
+	-webkit-animation:spin 4s linear infinite;
+	-moz-animation:spin 4s linear infinite;
+	animation:spin 4s linear infinite;
+}
+
+.spin3 {
+	display: inline-block;
+	-webkit-animation:spin 3s linear infinite;
+	-moz-animation:spin 3s linear infinite;
+	animation:spin 3s linear infinite;
 }
 
 @-moz-keyframes spin { 
@@ -147,7 +180,7 @@ video {
 	}
 	100% {
 		-webkit-transform: rotate(0deg);
-	}   
+	}
 }
 
 .pp {
