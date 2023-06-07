@@ -6,13 +6,19 @@ html {
 body {
 	font-size: 100%;
 	height: 100%;
-	background-color: #fafafa;
+	background-color: #0a0704;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
+	color: white;
 }
 
 h1 {
 	font-size: 150%;
+	color: #EEEEEE;
+}
+
+h2 {
+	color: white;
 }
 
 .heavy {
@@ -22,12 +28,11 @@ h1 {
 .card {
 	height: 100%;
 	border: 0px;
-	background-color: #fff
+	color: black;
 }
 
-.card-dark {
-	background-color: #121212;
-	color: #fff;
+.card-img-top {
+	width: 40%;
 }
 
 .child {
@@ -35,52 +40,38 @@ h1 {
 }
 
 .card-header {
-	font-weight: bold;
 	text-align: center;
 	padding: 8px;
 	border-bottom: 0px;
-	background-color: rgb(84 223 114 / 21%);
 }
 
 .card-body {
 	padding: 25px;
+	padding-bottom: 10px;
+	background-color: #f1f6f7;
+	border-radius: 0.25rem;
 }
 
-.btn {
-	padding: 12px 0px;
+.btn-primary {
+	border: none;
+    background-color: #86c04d;
 }
 
-.btn-label {
-	display: inline-block;
-	padding: 6px 12px;
-	background: rgba(0, 0, 0, 0.15);
-	border-radius: 3px 0 0 3px;
-}
-
-.btn-secondary {
-	display: block;
-	padding: 0px;
-}
-
-.btn-yt {
-	color: black;
-	background-color: #FF0000a1;
-	padding: 0px;
-}
-
-.btn-yt:hover {
-	color: black;
-	background-color: #FF0000;
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	border: none;
+    background-color: #000;
+    color: white;
+    box-shadow: none;
 }
 
 .btn-di {
-	color: black;
-	background-color: #7289DAa1;
+	color: white;
+	background-color: #7289dadb;
 	padding: 0px;
 }
 
 .btn-di:hover {
-	color: black;
+	color: white;
 	background-color: #7289DA;
 }
 
@@ -94,19 +85,8 @@ h1 {
 	background-color: #8BC34A;
 }
 
-
-.btn-primary {
-	width: 100%;
-    color: #000;
-    background-color: #e8e8e8;
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
-.btn-primary:hover {
-	background-color: #d8d8d8;
-	color: #000;
+.modal-dialog {
+	max-width: 600px;
 }
 
 .modal-toggle {
@@ -148,47 +128,13 @@ video {
 
 .spin {
 	display: inline-block;
-	-webkit-animation:spin 5s linear infinite;
-	-moz-animation:spin 5s linear infinite;
-	animation:spin 5s linear infinite;
+	-webkit-animation:spin 60s linear infinite;
+	-moz-animation:spin 60s linear infinite;
+	animation:spin 60s linear infinite;
 }
 
-.spin2 {
-	display: inline-block;
-	-webkit-animation:spin 4s linear infinite;
-	-moz-animation:spin 4s linear infinite;
-	animation:spin 4s linear infinite;
-}
-
-.spin3 {
-	display: inline-block;
-	-webkit-animation:spin 3s linear infinite;
-	-moz-animation:spin 3s linear infinite;
-	animation:spin 3s linear infinite;
-}
-
-@-moz-keyframes spin { 
-	100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-	100% { -webkit-transform: rotate(360deg); } 
-}
 @keyframes spin { 
-	0% {
-		-webkit-transform: rotate(0deg);
-	}
-	25% {
-		-webkit-transform: rotate(10deg);
-	}
-	50% {
-		-webkit-transform: rotate(0deg);
-	}
-	75% {
-		-webkit-transform: rotate(-10deg);
-	}
-	100% {
-		-webkit-transform: rotate(0deg);
-	}
+	100% { -webkit-transform: rotate(360deg); } 
 }
 
 .pp {
@@ -218,4 +164,37 @@ h3 > a {
 .link-dark {
 	cursor: pointer;
 	color: black;
+}
+
+.lg-arrow {
+	font-size: 50px;
+}
+
+.bg-white {
+	background-color: #eee;
+}
+
+.bg-black {
+	background-color: #efefef;
+}
+
+.txt-black {
+	color: black;
+}
+
+.yellow {
+	color: #f2c724;
+}
+
+.footer {
+	background-color: #090908;
+	color: #fff;
+}
+
+.atm {
+	color: #5865f2;
+	background-color: #f1f1f1;
+	padding: 4px;
+	border-radius: 3px;
+	white-space: nowrap;
 }
