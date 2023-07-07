@@ -29,7 +29,7 @@ h2 {
 	height: 100%;
 	border: 0px;
 	color: black;
-	background-color: #f1f6f7;
+	background-color: #d5e3e6;
 	border-radius: 8px;
 	overflow: hidden;
 }
@@ -176,6 +176,10 @@ h3 > a {
 
 .bg-black {
 	background-color: #efefef;
+}
+
+.bg-icon {
+	background-color: #f1f6f7;
 }
 
 .txt-black {
