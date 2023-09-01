@@ -29,7 +29,7 @@ h2 {
 	height: 100%;
 	border: 0px;
 	color: black;
-	background-color: #d5e3e6;
+	background-color: #dfeaed;
 	border-radius: 8px;
 	overflow: hidden;
 }
@@ -46,23 +46,24 @@ h2 {
 	text-align: center;
 	padding: 8px;
 	border-bottom: 0px;
+	background-color: #d5e3e6;
 }
 
 .card-body {
 	padding: 25px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	border-radius: 0.25rem;
 }
 
 .btn-primary {
 	border: none;
-	background-color: #86c04d;
+	background-color: #7eb449;
 	width: fit-content;
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
 	border: none;
-	background-color: #000;
+	background-color: #5ba117;
 	color: white;
 	box-shadow: none;
 }
@@ -75,7 +76,7 @@ h2 {
 
 .btn-di:hover {
 	color: white;
-	background-color: #7289DA;
+	background-color: #4967d0db;
 }
 
 .btn-ai {
@@ -178,6 +179,14 @@ h3 > a {
 	background-color: #efefef;
 }
 
+.bg-blue {
+	background-color: #f1f6f7;
+}
+
+.bg-blue {
+	background-color: #f1f6f7;
+}
+
 .bg-icon {
 	background-color: #f1f6f7;
 }
@@ -201,4 +210,8 @@ h3 > a {
 	padding: 4px;
 	border-radius: 3px;
 	white-space: nowrap;
+}
+
+.round {
+	border-radius: 30px;
 }
