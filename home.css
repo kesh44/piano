@@ -30,7 +30,7 @@ h2 {
 	border: 0px;
 	color: black;
 	background-color: #dfeaed;
-	border-radius: 8px;
+	border-radius: 15px;
 	overflow: hidden;
 }
 
@@ -214,4 +214,14 @@ h3 > a {
 
 .round {
 	border-radius: 30px;
+}
+
+.db {
+    background-color: #3c4270;
+    color: #f2f3ff;
+    font-weight: normal;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 4px;
 }
