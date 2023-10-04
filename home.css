@@ -30,7 +30,7 @@ h2 {
 	border: 0px;
 	color: black;
 	background-color: #dfeaed;
-	border-radius: 15px;
+	border-radius: 10px;
 	overflow: hidden;
 }
 
@@ -213,7 +213,7 @@ h3 > a {
 }
 
 .round {
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .db {
@@ -224,4 +224,21 @@ h3 > a {
     border-radius: 5px;
     font-size: 20px;
     margin-right: 4px;
+}
+
+.yt {
+	text-decoration-line: underline;
+	text-decoration-thickness: 5px;
+	text-decoration-color: #FF0000;
+}
+
+.dc {
+	text-decoration-line: underline;
+	text-decoration-thickness: 5px;
+	text-decoration-color: #5865F2;
+}
+
+.bi {
+	vertical-align: -0.06rem;
+	padding-right: 8px;
 }
