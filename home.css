@@ -25,6 +25,17 @@ h2 {
 	font-weight: 700;
 }
 
+.flag {
+	width: 30px;
+	opacity: 0.6;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.flag-selected {
+	opacity: 1;
+}
+
 .card {
 	height: 100%;
 	border: 0px;
