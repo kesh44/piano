@@ -1,5 +1,5 @@
 :root {
-  color-scheme: dark;
+	color-scheme: dark;
 }
 
 html {
@@ -45,8 +45,9 @@ h2 {
 	border: 0px;
 	color: black;
 	background-color: #dfeaed;
-	border-radius: 10px;
+	border-radius: 8px;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .card-img-top {
@@ -236,13 +237,13 @@ h3 > a {
 }
 
 .db {
-    background-color: #3c4270;
-    color: #f2f3ff;
-    font-weight: normal;
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-right: 4px;
+	background-color: #3c4270;
+	color: #f2f3ff;
+	font-weight: normal;
+	padding: 4px 8px;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-right: 4px;
 }
 
 .yt {
@@ -260,4 +261,26 @@ h3 > a {
 .bi {
 	vertical-align: -0.06rem;
 	padding-right: 8px;
+}
+
+.card .un {
+  display: inline-block;
+  color: #13637d;
+}
+
+.card .un::after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: #13637d;
+  transition: 300ms;
+}
+
+/*.card .un:hover::after {
+  width: 100%;
+}*/
+
+.card:hover .un::after {
+  width: 100%;
 }
