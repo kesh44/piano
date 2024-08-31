@@ -85,19 +85,10 @@ video {
 	border-radius: 8px;
 }
 
-.footer {
-	background-color: #0a0704;
-	color: #ddd;
-}
-
-.bg-whit {
-	background-color: #f1f6f7;
-}
-
-.txt-black {
-	color: black;
-}
-
 .mockup {
-	width: 60%;
+	width: 50%;
+}
+
+.footer {
+	margin-top: 40px;
 }
