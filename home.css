@@ -28,11 +28,11 @@ body {
 	display: block;
 	font-style: italic;
 	text-decoration: none;
-	color: #908be1;
+	color: #a0f3d4;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -86,9 +86,46 @@ video {
 }
 
 .mockup {
-	width: 50%;
+	width: 80%;
 }
 
 .footer {
 	margin-top: 40px;
+}
+
+.caption, .caption a {
+	font-size: 10px;
+	text-decoration: none;
+	color: #888;
+	font-style: italic;
+}
+
+.btn-try, .btn-buy {
+	display: inline-block;
+	margin: 5px;
+	border-radius: 1px;
+	padding: 6px 19px;
+	background-color: #5046c7;
+	text-decoration: none;
+	font-weight: 700;
+	color: #ddd;
+	border: 2px solid #5046c7;
+}
+
+.btn-buy:hover {
+	background-color: #ddd;
+	color: #5046c7;
+	border: 2px solid #ddd;
+}
+
+.btn-try {
+	background-color: #0a0704;
+	color: #ddd;
+	border: 2px solid #5046c7;
+}
+
+.btn-try:hover {
+	background-color: #0a0704;
+	color: #fff;
+	border: 2px solid #ddd;
 }
