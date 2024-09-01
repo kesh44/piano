@@ -4,7 +4,7 @@
 
 body {
 	font-size: 100%;
-	height: 100%;
+	height: 101vh;
 	background-color: #0a0704;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 14px;
@@ -90,7 +90,7 @@ video {
 }
 
 .footer {
-	margin-top: 40px;
+	margin-top: 50px;
 }
 
 .caption, .caption a {
@@ -103,7 +103,7 @@ video {
 .btn-try, .btn-buy {
 	display: inline-block;
 	margin: 5px;
-	border-radius: 1px;
+	border-radius: 2px;
 	padding: 6px 19px;
 	background-color: #5046c7;
 	text-decoration: none;

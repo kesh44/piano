@@ -15,7 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="transitions.css"/>
+  <script type="module" src="swup.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -28,10 +30,10 @@
     <p>Piano tutorials, MIDI files & sheet music</p>
   </div>
 
-  <div class="container pb-5">
+  <div id="swup" class="container pb-5 transition-main">
     <div class="row g-0">
       <div class="col-md-8 offset-md-2">
-        <a href="index.html" class="goback"><i class="bi bi-arrow-left"></i> Back</a>
+        <a href="index.html" class="goback" data-swup-animation="right"><i class="bi bi-arrow-left"></i> Back</a>
         <h3>Learn Synthesia tutorials on YouTube</h3>
         <p class="fst-italic">YouTube Control Panel by Kesh</p>
         <div class="text-center py-2">
@@ -46,12 +48,10 @@
           <li>Quickly adjust the video speed</li>
         </ul>
         <p>And the best part? This works for ANY YouTube video! Try the demo version, which is preloaded with one of my piano tutorials. It works best if you try it on your phone.</p>
-        <div class="text-center">
+        <div class="text-center mt-4">
           <a class="btn-try" href="https://kesh44.github.io/ytp-demo/">Demo</a>
           <a class="btn-buy" href="https://keshpianomusic.gumroad.com/l/controlpanel?wanted=true">Buy now</a>
         </div>
-        
-        
       </div>
     </div>
   </div>
