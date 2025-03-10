@@ -4,11 +4,12 @@
 
 body {
 	font-size: 100%;
-	background-color: #0a0704;
+	background-color: #ecf3f5;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #ddd;
+	color: #000;
 	margin: None;
 	border: None;
+
 }
 
 .flex-item {
@@ -21,9 +22,9 @@ body {
 }
 
 .kpm, .kpm:hover {
-	color: #ddd;
-  text-decoration: none;
-  border-bottom: 4px solid #908be1;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 6px solid #673AB7;
 }
 
 .goback, .goback:hover {
@@ -31,7 +32,7 @@ body {
 	display: block;
 	font-style: italic;
 	text-decoration: none;
-	color: #a0f3d4;
+	color: #673AB7;
 }
 
 h3 {
@@ -81,6 +82,12 @@ h3 {
 
 .card-body {
 	padding: 25px;
+}
+
+#pronouns {
+	border-radius: 8px;
+	margin: 10px 0px;
+	width: 100%;
 }
 
 video {
