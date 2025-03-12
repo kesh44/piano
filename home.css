@@ -1,19 +1,17 @@
-:root {
-	color-scheme: dark;
-}
-
 body {
 	font-size: 100%;
 	background-color: #ecf3f5;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #000;
-	margin: None;
+	height: 100vh;
 	border: None;
-
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 
-.flex-item {
-    margin: auto;
+.v-center {
+	margin: auto;
 }
 
 .pp {
@@ -62,7 +60,7 @@ h3 {
 .card .un::after {
 	content: '';
 	width: 0px;
-	height: 3px;
+	height: 4px;
 	display: block;
 	background: #13637d;
 	transition: 300ms;
