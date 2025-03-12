@@ -1,12 +1,13 @@
 body {
 	font-size: 100%;
 	background-color: #ecf3f5;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #000;
+	font-family: 'SF Pro Display', sans-serif;  
+	color: #222;
 	height: 100vh;
 	border: None;
 	justify-content: center;
 	align-items: center;
+	font-smooth: auto;
 	display: flex;
 }
 
@@ -33,17 +34,12 @@ body {
 	color: #673AB7;
 }
 
-h3 {
-	font-size: 20px;
-	font-weight: 700;
-}
-
 .heavy {
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .card {
-/*	height: 100%;*/
+	font-size: 15px;
 	border: 0px;
 	color: black;
 	background-color: #dfeaed;
@@ -75,12 +71,17 @@ h3 {
 	width: 40%;
 }
 
+h5 {
+	font-size: 18px;
+}
+
 .child {
 	margin: auto;
 }
 
 .card-body {
-/*	padding: 25px;*/
+	padding: 18px;
+	padding-left: 5px;
 }
 
 #pronouns {
