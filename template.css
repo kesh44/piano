@@ -17,22 +17,26 @@ body {
 }
 
 .goback, .goback:hover {
-	margin-bottom: 10px;
-	display: block;
-	font-style: italic;
 	text-decoration: none;
-	color: #673AB7;
+	color: #13637d;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .card {
 	font-size: 15px;
 	border: 0px;
-	color: black;
+	color: #222;
 	background-color: #dfeaed;
 	border-radius: 8px;
 	overflow: hidden;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+.bg-card {
+	background-color: #dfeaed;
+	border-radius: 8px;
 }
 
 .card .un {
@@ -80,34 +84,4 @@ video {
 	text-decoration: none;
 	color: #888;
 	font-style: italic;
-}
-
-.btn-try, .btn-buy {
-	display: inline-block;
-	margin: 5px;
-	border-radius: 2px;
-	padding: 6px 19px;
-	background-color: #5046c7;
-	text-decoration: none;
-	font-weight: 700;
-	color: #ddd;
-	border: 2px solid #5046c7;
-}
-
-.btn-buy:hover {
-	background-color: #ddd;
-	color: #5046c7;
-	border: 2px solid #ddd;
-}
-
-.btn-try {
-	background-color: #0a0704;
-	color: #ddd;
-	border: 2px solid #5046c7;
-}
-
-.btn-try:hover {
-	background-color: #0a0704;
-	color: #fff;
-	border: 2px solid #ddd;
 }
