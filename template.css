@@ -12,10 +12,16 @@ body {
 	max-width: 100px;
 }
 
+.a-kpm {
+	text-decoration: none;
+}
+
 .kpm, .kpm:hover {
 	font-size: 28px;
 	color: #222;
-	text-decoration: underline;
+	text-decoration-line: underline;
+	text-decoration-thickness: 4px;
+	text-decoration-color: #acd980;
 }
 
 .goback, .goback:hover {
