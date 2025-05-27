@@ -21,7 +21,7 @@ body {
 	color: #222;
 	text-decoration-line: underline;
 	text-decoration-thickness: 4px;
-	text-decoration-color: #acd980;
+	text-decoration-color: #8bc851;
 }
 
 .goback, .goback:hover {
@@ -98,4 +98,26 @@ video {
 	text-decoration: none;
 	color: #888;
 	font-style: italic;
+}
+
+#credit {
+	opacity: 0.35;
+}
+
+
+.note {
+	font-size: 1.5rem;
+	opacity: 0.3;
+	transition: opacity 0.2s;
+}
+
+.note.playing {
+	animation: bob 0.8s ease-in-out infinite;
+	opacity: 1;
+}
+
+@keyframes bob {
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(-8px); }
+	100% { transform: translateY(0); }
 }
