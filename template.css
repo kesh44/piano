@@ -4,7 +4,7 @@ body {
 	font-family: 'SF Pro Display', sans-serif;  
 	color: #222;
 	border: None;
-	font-smooth: auto;
+	
 }
 
 .pp {
@@ -16,12 +16,16 @@ body {
 	text-decoration: none;
 }
 
-.kpm, .kpm:hover {
+.kpm {
 	font-size: 28px;
 	color: #222;
 	text-decoration-line: underline;
 	text-decoration-thickness: 4px;
 	text-decoration-color: #8bc851;
+}
+
+.kpm:hover {
+	text-decoration-color: #8e87de;
 }
 
 .goback, .goback:hover {
@@ -128,4 +132,15 @@ video {
     color: #fff;
     background-color: #61a71f;
     border-color: #61a71f;
+}
+
+.example {
+	padding: 5px 0px;
+    background: #8bc851;
+    color: #ecf3f5;
+    border-radius: 6px;
+}
+
+.example-img  {
+	height: 25px;
 }
