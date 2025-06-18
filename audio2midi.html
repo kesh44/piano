@@ -6,45 +6,63 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-
-
+	
+	
+	
 	<link rel="stylesheet" href="template.css"/>
 	<link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
+	<nav class="navbar navbar-expand navbar-light">
+		<div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+				<img src="pp.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-2">
+				<span class="kpm">keshpianomusic</span>
+			</a>
+			<ul class="navbar-nav ms-auto flex-row align-items-center">
+				<li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="index.html">home</a></li>
+				<li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="audio2midi.html">audio-to-midi</a></li>
+				<li class="nav-item mx-2 d-flex align-items-center">
+					<a class="nav-link mt-1" href="https://youtube.com/@keshpianomusic" target="_blank" title="YouTube">
+						<i class="bi bi-youtube"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	
 	<div>
-		<!-- Header -->
-		<div class="text-center my-5">
-			<img src="pp.jpg" class="pp my-3">
-			<a class="a-kpm" href="index.html"><div class="kpm fw-bold">keshpianomusic</div></a>
-			<div>Piano tutorials, MIDI files and sheet music</div>
-		</div>
 		<div id="main" class="container pt-4 pb-5">
-
+			
 			<!-- Hero Section -->
-			<section class="text-center pb-4">
-				<h1 class="fw-bold">Turn Any Recording into a MIDI File</h1>
-				<p class="mt-3">Generate accurate MIDI files from audio using my AI-powered converter.<br>Perfect for learners, remixers, and producers.</p>
+			<section class="text-center py-5">
+				<h1 class="fw-bold pt-5">Turn any recording into a MIDI file</h1>
+				<p class="mt-3 mb-1">Generate accurate MIDI files from instruments using my AI-powered converter.</p>
+				<p class="text-muted">Trusted by 60,000+ YouTube subscribers and supported by 50+ musicians on Patreon.</p>
+				
 				<a href="https://www.patreon.com/keshhh" class="btn btn-secondary btn-lg mt-4 mb-3">Get Unlimited Access on Patreon</a>
 				<a href="https://midi.keshpianomusic.com/" class="btn btn-outline-secondary btn-lg mt-4 mb-3 mx-2">Log in</a>
 			</section>
-
+			
 			<!-- Problem and Solution -->
 			<section class="py-5">
-				<h2 class="h3 fw-bold mb-3">Tired of Searching for MIDI Files That Don’t Exist?</h2>
+				<h2 class="h4 fw-bold mb-3">Tired of Searching for MIDI Files?</h2>
 				<p class="mb-0">MIDI files aren’t always available from creators. This tool gives you full control - simply upload any piano or instrumental audio, and receive a high-quality, accurately transcribed MIDI file in seconds.</p>
 			</section>
 
-			<section class="pb-5">
-				<div class="d-flex justify-content-center example">
+			<section class="py-5">
+				<h2 class="h4 fw-bold mb-3">How It Works</h2>
+				<p class="mb-0">Powered by advanced AI, this converter analyzes your audio and generates a MIDI file that captures the melody, chords, and nuances of your performance.</p>
+			</section>
+			
+			<section class="pb-5">				
+				<div class="d-flex justify-content-center example mb-2">
 					<div class="d-flex flex-inline align-items-center mx-2">
 						Classical Piano
 					</div>
@@ -58,20 +76,17 @@
 						<img class="example-img" src="waves.png">
 					</div>
 					<div class="d-flex flex-inline align-items-center mx-2">
-
 						<button class="btn btn-outline-light play-btn" data-audio="audio2">
 							Generated Midi<i class="bi bi-play-fill"></i>
 						</button>
 						<audio id="audio2" src="debussy_out.mp3"></audio>
-
-
 					</div>
 					<div class="d-flex flex-inline align-items-center mx-2">
 						<a href="midis/classical.mid" class="link-light" download>Download MIDI</a>
 					</div>
 				</div>
 			</section>
-
+			
 			<!-- Features -->
 			<section class="p-5 bg-card">
 				<h2 class="h3 fw-bold mb-4">Why Use This Converter?</h2>
@@ -82,7 +97,7 @@
 					<li class="mb-3"><strong>💻 Simple to Use:</strong> No software to install. Just upload and download.</li>
 				</ul>
 			</section>
-
+			
 			<!-- How It Works -->
 			<section class="py-5">
 				<h2 class="h3 fw-bold mb-4">How It Works</h2>
@@ -93,14 +108,14 @@
 					<li><strong>Download the MIDI</strong> - ready to use in your DAW or piano software.</li>
 				</ol>
 			</section>
-
+			
 			<!-- Pricing and Access -->
 			<section class="pb-5 text-center">
 				<h2 class="h3 fw-bold mb-3">Get started for $2/month</h2>
 				<p class="mb-3">Unlimited conversions. Instant access via Patreon. Cancel anytime.</p>
-				<a href="https://www.patreon.com/keshhh" class="btn btn-dark btn-lg">Join on Patreon</a>
+				<a href="https://www.patreon.com/keshhh" class="btn btn-secondary btn-lg">Join on Patreon</a>
 			</section>
-
+			
 			<!-- FAQ -->
 			<section class="py-5">
 				<h2 class="h3 fw-bold mb-4">Frequently Asked Questions</h2>
@@ -121,38 +136,42 @@
 					<p>Yes, but be sure your source material is either original or licensed appropriately.</p>
 				</div>
 			</section>
-
+			
 			<!-- Footer -->
-			<div class="g-0 pt-5 text-center">
-				<h5 class="fw-bold">keshpianomusic</h5>
-				<p>kesh@keshpianomusic.com</p>
-				<a class="link-dark" href="policy.html">Privacy Policy</a>
-				<a class="link-dark" href="terms.html">Terms of Use</a>
-			</div>
+			
 		</div>
 	</div>
-
+	
+	<footer class="pb-5">
+		<div class="text-center">
+			<h5 class="fw-bold">keshpianomusic</h5>
+			<p>kesh@keshpianomusic.com</p>
+			<a class="link-dark" href="policy.html">Privacy Policy</a>
+			<a class="link-dark" href="terms.html">Terms of Use</a>
+		</div>
+	</footer>
+	
 	<script>
 		const buttons = document.querySelectorAll('.play-btn');
-
+		
 		buttons.forEach(btn => {
 			btn.addEventListener('click', () => {
 				const audioId = btn.getAttribute('data-audio');
 				const audio = document.getElementById(audioId);
 				const icon = btn.querySelector('i');
-
-      // Pause and reset others
+				
+				// Pause and reset others
 				buttons.forEach(otherBtn => {
 					const otherAudio = document.getElementById(otherBtn.getAttribute('data-audio'));
 					const otherIcon = otherBtn.querySelector('i');
-
+					
 					if (otherAudio !== audio) {
 						otherAudio.pause();
 						otherAudio.currentTime = 0;
 						otherIcon.className = 'bi bi-play-fill';
 					}
 				});
-
+				
 				if (audio.paused) {
 					audio.play();
 					icon.className = 'bi bi-pause-fill';
@@ -160,14 +179,14 @@
 					audio.pause();
 					icon.className = 'bi bi-play-fill';
 				}
-
+				
 				audio.onended = () => {
 					icon.className = 'bi bi-play-fill';
 				};
 			});
 		});
 	</script>
-
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
