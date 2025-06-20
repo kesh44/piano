@@ -19,22 +19,27 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand navbar-light px-3">
-		<!-- <div class="container"> -->
-			<a class="navbar-brand d-flex align-items-center" href="index.html">
-				<img src="pp.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-2">
-				<span class="kpm">keshpianomusic</span>
-			</a>
-			<ul class="navbar-nav ms-auto flex-row align-items-center">
-				<!-- <li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="index.html">home</a></li> -->
-				<!-- <li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="audio2midi.html">audio-to-midi</a></li> -->
+	<nav class="navbar navbar-expand-lg navbar-light px-3">
+		<a class="navbar-brand d-flex align-items-center" href="index.html">
+			<img src="pp.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-2">
+			<span class="kpm">keshpianomusic</span>
+		</a>
+		<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span>
+				<i class="bi bi-list" style="font-size: 2rem; color: #8e87de;"></i>
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="mainNavbar">
+			<ul class="navbar-nav ms-auto flex-row flex-lg-row align-items-center">
+				<li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="index.html">home</a></li>
+				<li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="audio2midi.html">audio-to-midi</a></li>
 				<li class="nav-item mx-2 d-flex align-items-center">
 					<a class="nav-link mt-1" href="https://youtube.com/@keshpianomusic" target="_blank" title="YouTube">
 						<i class="bi bi-youtube"></i>
 					</a>
 				</li>
 			</ul>
-		<!-- </div> -->
+		</div>
 	</nav>
 	
 	<div>
@@ -55,128 +60,128 @@
 				<h3 class="fw-bold mb-4">Tired of searching for MIDI files?</h3>
 				<p class="mb-0 text-muted">MIDI files aren’t always available from creators. My audio-to-MIDI converter gives you full control. Simply upload any piano or instrumental audio, and receive a <span class="fw-bold" style="color: #6c63b5;">high-quality, accurately transcribed MIDI file</span>  in seconds. Plus, your support on Patreon helps me continue making more piano tutorials and resources for the community!</p>
 			</section>
-
-
-<section class="pb-3">
-    <h3 class="fw-bold text-center mb-4" style="color: #6c63b5;">Preview real examples</h3>
-    <p class="text-center text-muted mb-4">Play the original audio, compare the generated MIDI, and download the MIDI file.</p>
-    <div class="row">
-        <!-- Example 1 -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4 text-center" style="background-color: #edeafd">
-                <div class="fw-semibold mb-3" style="color: #8e87de;">Classical Piano</div>
-                <div class="d-grid gap-2 mb-3">
-                    <button class="btn play-btn w-100" style="background-color:#8e87de; color:#fff; border:none;" data-audio="audio1">
-                        <i class="bi bi-play-fill"></i> Play Original
-                    </button>
-                    <audio id="audio1" src="debussy.mp3"></audio>
-                    <button class="btn play-btn w-100" style="background-color:#6c63b5; color:#fff; border:none;" data-audio="audio2">
-                        <i class="bi bi-play-fill"></i> Play MIDI
-                    </button>
-                    <audio id="audio2" src="debussy_out.mp3"></audio>
-                </div>
-                <a href="midis/classical.mid" class="btn w-100 btn-sm mt-2" style="background-color:#edeafd; color:#6c63b5; border:none;" download>
-                    <i class="bi bi-download"></i> Download MIDI
-                </a>
-            </div>
-        </div>
-        <!-- Example 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 p-4 text-center" style="background-color: #edeafd">
-                <div class="fw-semibold mb-3" style="color: #8e87de;">Jazz Piano</div>
-                <div class="d-grid gap-2 mb-3">
-                    <button class="btn play-btn w-100" style="background-color:#8e87de; color:#fff; border:none;" data-audio="audio3">
-                        <i class="bi bi-play-fill"></i> Play Original
-                    </button>
-                    <audio id="audio3" src="jazz.mp3"></audio>
-                    <button class="btn play-btn w-100" style="background-color:#6c63b5; color:#fff; border:none;" data-audio="audio4">
-                        <i class="bi bi-play-fill"></i> Play MIDI
-                    </button>
-                    <audio id="audio4" src="jazz_out.mp3"></audio>
-                </div>
-                <a href="midis/jazz.mid" class="btn w-100 btn-sm mt-2" style="background-color:#edeafd; color:#6c63b5; border:none;" download>
-                    <i class="bi bi-download"></i> Download MIDI
-                </a>
-            </div>
-        </div>
-        <!-- Example 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100  p-4 text-center" style="background-color: #edeafd">
-                <div class="fw-semibold mb-3" style="color: #8e87de;">Pop Piano</div>
-                <div class="d-grid gap-2 mb-3">
-                    <button class="btn play-btn w-100" style="background-color:#8e87de; color:#fff; border:none;" data-audio="audio5">
-                        <i class="bi bi-play-fill"></i> Play Original
-                    </button>
-                    <audio id="audio5" src="pop.mp3"></audio>
-                    <button class="btn play-btn w-100" style="background-color:#6c63b5; color:#fff; border:none;" data-audio="audio6">
-                        <i class="bi bi-play-fill"></i> Play MIDI
-                    </button>
-                    <audio id="audio6" src="pop_out.mp3"></audio>
-                </div>
-                <a href="midis/pop.mid" class="btn w-100 btn-sm mt-2" style="background-color:#edeafd; color:#6c63b5; border:none;" download>
-                    <i class="bi bi-download"></i> Download MIDI
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 			
-<section class="py-5 rounded">
-    <div class="container">
-        <div class="row justify-content-center mb-4">
-            <div class="col-lg-8 text-center">
-                <h2 class="h3 fw-bold mb-4" style="color: #6c63b5;">Why use this converter?</h2>
-                <p class="text-muted mb-0">Designed for musicians, creators, and learners who want fast, accurate, and flexible results.</p>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                            <i class="bi bi-music-note-beamed" style="font-size: 2.5rem; color: #8e87de;"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2" style="color: #6c63b5;">Accurate Transcription</h5>
-                        <p class="text-muted mb-0">Converts audio to MIDI with high note accuracy for piano and other melodic instruments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                            <i class="bi bi-cpu" style="font-size: 2.5rem; color: #8e87de;"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2" style="color: #6c63b5;">Intelligent Features</h5>
-                        <p class="text-muted mb-0">Recognises chords and splits MIDI into left and right hand tracks for enhanced playability.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                            <i class="bi bi-infinity" style="font-size: 2.5rem; color: #8e87de;"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2" style="color: #6c63b5;">Unlimited Use</h5>
-                        <p class="text-muted mb-0">Convert as many tracks as you like with a single subscription.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                            <i class="bi bi-cloud-arrow-down" style="font-size: 2.5rem; color: #8e87de;"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2" style="color: #6c63b5;">Simple to Use</h5>
-                        <p class="text-muted mb-0">No software to install. Just upload your audio and download your MIDI.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+			
+			<section class="pb-3">
+				<h3 class="fw-bold text-center mb-4" style="color: #6c63b5;">Preview real examples</h3>
+				<p class="text-center text-muted mb-4">Play the original audio, compare the generated MIDI, and download the MIDI file.</p>
+				<div class="row">
+					<!-- Example 1 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 p-4 text-center" style="background-color: #edeafd">
+							<div class="fw-semibold mb-3" style="color: #8e87de;">Classical Piano</div>
+							<div class="d-grid gap-2 mb-3">
+								<button class="btn play-btn w-100" style="background-color:#8e87de; color:#fff; border:none;" data-audio="audio1">
+									<i class="bi bi-play-fill"></i> Play Original
+								</button>
+								<audio id="audio1" src="debussy.mp3"></audio>
+								<button class="btn play-btn w-100" style="background-color:#6c63b5; color:#fff; border:none;" data-audio="audio2">
+									<i class="bi bi-play-fill"></i> Play MIDI
+								</button>
+								<audio id="audio2" src="debussy_out.mp3"></audio>
+							</div>
+							<a href="midis/classical.mid" class="btn w-100 btn-sm mt-2" style="background-color:#edeafd; color:#6c63b5; border:none;" download>
+								<i class="bi bi-download"></i>&nbsp;&nbsp;Download MIDI
+							</a>
+						</div>
+					</div>
+					<!-- Example 2 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 p-4 text-center" style="background-color: #edeafd">
+							<div class="fw-semibold mb-3" style="color: #8e87de;">Jazz Piano</div>
+							<div class="d-grid gap-2 mb-3">
+								<button class="btn play-btn w-100" style="background-color:#8e87de; color:#fff; border:none;" data-audio="audio3">
+									<i class="bi bi-play-fill"></i> Play Original
+								</button>
+								<audio id="audio3" src="jazz.mp3"></audio>
+								<button class="btn play-btn w-100" style="background-color:#6c63b5; color:#fff; border:none;" data-audio="audio4">
+									<i class="bi bi-play-fill"></i> Play MIDI
+								</button>
+								<audio id="audio4" src="jazz_out.mp3"></audio>
+							</div>
+							<a href="midis/jazz.mid" class="btn w-100 btn-sm mt-2" style="background-color:#edeafd; color:#6c63b5; border:none;" download>
+								<i class="bi bi-download"></i>&nbsp;&nbsp;Download MIDI
+							</a>
+						</div>
+					</div>
+					<!-- Example 3 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100  p-4 text-center" style="background-color: #edeafd">
+							<div class="fw-semibold mb-3" style="color: #8e87de;">Pop Piano</div>
+							<div class="d-grid gap-2 mb-3">
+								<button class="btn play-btn w-100" style="background-color:#8e87de; color:#fff; border:none;" data-audio="audio5">
+									<i class="bi bi-play-fill"></i> Play Original
+								</button>
+								<audio id="audio5" src="pop.mp3"></audio>
+								<button class="btn play-btn w-100" style="background-color:#6c63b5; color:#fff; border:none;" data-audio="audio6">
+									<i class="bi bi-play-fill"></i> Play MIDI
+								</button>
+								<audio id="audio6" src="pop_out.mp3"></audio>
+							</div>
+							<a href="midis/pop.mid" class="btn w-100 btn-sm mt-2" style="background-color:#edeafd; color:#6c63b5; border:none;" download>
+								<i class="bi bi-download"></i>&nbsp;&nbsp;Download MIDI
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="py-5 rounded">
+				<div class="container">
+					<div class="row justify-content-center mb-4">
+						<div class="col-lg-8 text-center">
+							<h2 class="h3 fw-bold mb-4" style="color: #6c63b5;">Why use this converter?</h2>
+							<p class="text-muted mb-0">Designed for musicians, creators, and learners who want fast, accurate, and flexible results.</p>
+						</div>
+					</div>
+					<div class="row g-4">
+						<div class="col-md-3">
+							<div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
+								<div class="card-body d-flex flex-column align-items-center">
+									<div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
+										<i class="bi bi-music-note-beamed" style="font-size: 2.5rem; color: #8e87de;"></i>
+									</div>
+									<h5 class="fw-bold mb-2" style="color: #6c63b5;">Accurate Transcription</h5>
+									<p class="text-muted mb-0">Converts audio to MIDI with high note accuracy for piano and other melodic instruments.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
+								<div class="card-body d-flex flex-column align-items-center">
+									<div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
+										<i class="bi bi-cpu" style="font-size: 2.5rem; color: #8e87de;"></i>
+									</div>
+									<h5 class="fw-bold mb-2" style="color: #6c63b5;">Intelligent Features</h5>
+									<p class="text-muted mb-0">Recognises chords and splits MIDI into left and right hand tracks for enhanced playability.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
+								<div class="card-body d-flex flex-column align-items-center">
+									<div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
+										<i class="bi bi-infinity" style="font-size: 2.5rem; color: #8e87de;"></i>
+									</div>
+									<h5 class="fw-bold mb-2" style="color: #6c63b5;">Unlimited Use</h5>
+									<p class="text-muted mb-0">Convert as many tracks as you like with a single subscription.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card h-100 border-0 text-center" style="background-color: #edeafd;">
+								<div class="card-body d-flex flex-column align-items-center">
+									<div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
+										<i class="bi bi-cloud-arrow-down" style="font-size: 2.5rem; color: #8e87de;"></i>
+									</div>
+									<h5 class="fw-bold mb-2" style="color: #6c63b5;">Simple to Use</h5>
+									<p class="text-muted mb-0">No software to install. Just upload your audio and download your MIDI.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- How It Works -->
 			<section class="py-5">
 				<h2 class="h3 fw-bold mb-4">How it works</h2>
@@ -190,7 +195,7 @@
 			
 			<!-- Pricing and Access -->
 			<section class="pb-5 text-center">
-				<h2 class="h3 fw-bold mb-3">Get started for $2/month</h2>
+				<h2 class="h3 fw-bold mb-3">Unlimited access for $2/month</h2>
 				<p class="mb-3">Unlimited conversions. Instant access via Patreon. Cancel anytime.</p>
 				<a href="https://www.patreon.com/keshpianomusic" class="btn btn-secondary btn-lg">Join on Patreon</a>
 			</section>
@@ -208,7 +213,7 @@
 				</div>
 				<div class="mb-3 text-muted">
 					<strong>How accurate is it?</strong>
-					<p>It achieves high accuracy on clear piano recordings. Results may vary with background noise or complex instrumentation.</p>
+					<p>It achieves high accuracy on clear piano recordings. Results may vary with background noise or complex instrumentation. There are multiple parameters to tweak until you get your perfect transcription.</p>
 				</div>
 				<div class="text-muted">
 					<strong>Can I use the MIDI files commercially?</strong>
@@ -232,7 +237,7 @@
 			<div class="small text-secondary">&copy; <span id="copyright-year"></span> keshpianomusic. All rights reserved.</div>
 		</div>
 	</footer>
-
+	
 	<script>
 		document.getElementById('copyright-year').textContent = new Date().getFullYear();
 	</script>
