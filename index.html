@@ -53,7 +53,7 @@
   </div>
 
   <div>
-    <div id="main" class="container mb-5 text-center">
+    <div id="main" class="container pb-5 text-center">
 
       <div class="p-2 h-100 d-inline-block">
         <a href="midi" class="text-decoration-none">
@@ -115,13 +115,23 @@
         </a>
       </div>
 
-      <div class="g-0 pt-5 text-center">
-        <h5 class="fw-bold">keshpianomusic</h5>
-        <p>kesh@keshpianomusic.com</p>
-        <p id="credit" class="mt-4">Thanks to <a class="link-dark" href="https://www.flaticon.com/authors/freepik">Freepik</a> for the icons!</p>
-      </div>
-
     </div>
+
+	<footer class="py-5 mt-5" style="background: #23223a;">
+		<div class="container text-center text-light">
+			<h5 class="fw-bold mb-2" style="color: #8e87de;">keshpianomusic</h5>
+			<p class="mb-4">kesh@keshpianomusic.com</p>
+			<div class="mb-2">
+				<a class="text-muted mx-1 text-decoration-none small" href="policy.html">Privacy Policy</a>
+				<a class="text-muted mx-1 text-decoration-none small" href="terms.html">Terms of Use</a>
+			</div>
+			<div class="small text-secondary">Copyright &copy; <span id="copyright-year"></span> keshpianomusic. All rights reserved.</div>
+		</div>
+	</footer>
+	
+	<script>
+		document.getElementById('copyright-year').textContent = new Date().getFullYear();
+	</script>
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
