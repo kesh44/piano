@@ -16,38 +16,19 @@
 	<link rel="stylesheet" href="template.css"/>
 	<link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<script src="navbar-component.js"></script>
+	<script src="footer-component.js"></script>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light px-3">
-		<a class="navbar-brand d-flex align-items-center" href="index.html">
-			<img src="pp.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-2">
-			<span class="kpm">keshpianomusic</span>
-		</a>
-		<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-			<span>
-				<i class="bi bi-list" style="font-size: 2rem; color: #8e87de;"></i>
-			</span>
-		</button>
-		<div class="collapse navbar-collapse" id="mainNavbar">
-			<ul class="navbar-nav ms-auto flex-row flex-lg-row align-items-center">
-				<li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="index.html">home</a></li>
-				<li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="audio2midi.html">audio-to-midi</a></li>
-				<li class="nav-item mx-2 d-flex align-items-center">
-					<a class="nav-link mt-1" href="https://youtube.com/@keshpianomusic" target="_blank" title="YouTube">
-						<i class="bi bi-youtube"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<navbar-component></navbar-component>
 	
 	<div>
 		<div id="main" class="container pt-5">
 			
 			<!-- Hero Section -->
 			<section class="text-center py-5">
-				<h1 class="fw-bold pt-4">Turn any recording into a MIDI file</h1>
+				<h1 class="fw-bold pt-1">Turn any recording into a MIDI file</h1>
 				<p class="my-3">Generate accurate MIDI files using my AI-powered converter.</p>				
 				<a href="https://www.patreon.com/keshpianomusic" class="btn btn-secondary btn-lg mt-4 mb-3">Get Unlimited Access on Patreon</a>
 				<a href="https://midi.keshpianomusic.com/" class="btn btn-outline-secondary btn-lg mt-4 mb-3 mx-2">Log in</a>
@@ -226,21 +207,7 @@
 		</div>
 	</div>
 	
-	<footer class="py-5" style="background: #23223a;">
-		<div class="container text-center text-light">
-			<h5 class="fw-bold mb-2" style="color: #8e87de;">keshpianomusic</h5>
-			<p class="mb-4">kesh@keshpianomusic.com</p>
-			<div class="mb-2">
-				<a class="text-muted mx-1 text-decoration-none small" href="policy.html">Privacy Policy</a>
-				<a class="text-muted mx-1 text-decoration-none small" href="terms.html">Terms of Use</a>
-			</div>
-			<div class="small text-secondary">Copyright &copy; <span id="copyright-year"></span> keshpianomusic. All rights reserved.</div>
-		</div>
-	</footer>
-	
-	<script>
-		document.getElementById('copyright-year').textContent = new Date().getFullYear();
-	</script>
+	<footer-component></footer-component>
 	
 	<script>
 		const buttons = document.querySelectorAll('.play-btn');
