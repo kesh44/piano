@@ -2,14 +2,25 @@ class FooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer class="py-5 mt-5 footer-dark">
-        <div class="container text-center text-light">
-          <h5 class="fw-bold mb-2 footer-title">keshpianomusic</h5>
-          <p class="mb-4">kesh@keshpianomusic.com</p>
-          <div class="mb-2">
-            <p>Privacy Policy</p>
-            <p>Terms of Use</p>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-1 footer-title">keshpianomusic</h5>
+              <p class="mb-0 text-secondary">kesh@keshpianomusic.com</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="footer-links">
+                <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-decoration-none">Terms of Use</a>
+              </div>
+            </div>
+            <div class="col-md-4 text-end">
+              <div class="small text-secondary">
+                Copyright &copy; <span id="copyright-year"></span> keshpianomusic.<br>
+                All rights reserved.
+              </div>
+            </div>
           </div>
-          <div class="small text-secondary">Copyright &copy; <span id="copyright-year"></span> keshpianomusic. All rights reserved.</div>
         </div>
       </footer>
     `;

@@ -4,6 +4,16 @@ body {
 	font-family: 'SF Pro Display', sans-serif;  
 	color: #ffffff;
 	border: None;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Main content wrapper to push footer down */
+.main-content-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 .navbar-light {
@@ -44,7 +54,7 @@ body {
 }
 
 .container {
-	max-width: 690px;
+	max-width: 900px;
 }
 
 .card {
@@ -105,7 +115,7 @@ h5 {
 }
 
 h2 {
-	color: #938de3;
+	color: #ada8f7;
 }
 
 .child {
@@ -262,6 +272,27 @@ hr {
 
 .footer-title {
 	color: #938de3;
+}
+
+.footer-links a {
+	color: #cdcdcd;
+	font-size: 14px;
+	transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #a9ffd6;
+}
+
+@media (max-width: 767px) {
+	.footer-dark .row > div {
+		text-align: center !important;
+		margin-bottom: 1rem;
+	}
+	
+	.footer-dark .row > div:last-child {
+		margin-bottom: 0;
+	}
 }
 
 /* Navbar toggle icon */
