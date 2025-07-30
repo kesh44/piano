@@ -24,89 +24,62 @@
     <div class="main-content-wrapper">
         <navbar-component></navbar-component>
 
-        <div>
-            <div id="main" class="container pt-5">
-                
-                <!-- Hero Section -->
-                <section class="text-center py-5">
-                    <h1 class="fw-bold pt-1">Your Complete Piano Learning Toolkit</h1>
-                    <p class="my-3">Practice with my MIDI visualiser and create MIDI files from any audio.<br>Sign up to my Patreon to get access, or log in to my Patreon portal if you're already a member.</p>				
-                    <a href="https://www.patreon.com/keshpianomusic" class="btn btn-secondary btn-lg mt-4 mb-3">Get Access on Patreon</a>
-                    <a href="https://play.keshpianomusic.com/" class="btn btn-outline-secondary btn-lg mt-4 mb-3 mx-2">Log in</a>
-                </section>
-                
-                <!-- MIDI Player Section -->
-                <section class="pt-5">
-                    <div class="row g-0 p-5 align-items-center shadow-sm" style="background: linear-gradient(135deg, #252525 0%, #503ec298 100%); border-radius: 12px;">
-                        <div class="col-lg-6">
-                            <h2 class="fw-bold mb-4" >MIDI Player & Practice Tool</h2>
-                            <p class="mb-4">The same visualisation as my piano videos on my YouTube channel. Only it's much better than learning from YouTube.</p>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Visual falling notes display</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Adjustable playback speed</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Practice bookmarks and loops</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Upload and play any MIDI file</li>
-                            </ul>
-                            <a href="https://play.keshpianomusic.com/demo" target="_blank" class="btn btn-primary btn-lg me-3">Try Demo</a>
-                            <a href="https://www.patreon.com/keshpianomusic" class="btn btn-outline-primary btn-lg">Get Full Access</a>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="midiplayer.png" class="img-fluid">
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Audio-to-MIDI Converter Section -->
-                <section class="py-5">
-                        <div class="row g-0 p-5 align-items-center shadow-sm" style="background: linear-gradient(135deg, #252525 0%, #00ffbf98 100%); border-radius: 12px;">
-                            <div class="col-lg-6">
-                                <h2 class="fw-bold mb-4">Audio-to-MIDI Converter</h2>
-                                <p class="mb-4">Turn any piano recording into a practice-ready MIDI file with AI precision.</p>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> High-accuracy transcription</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Chord recognition</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Left/right hand separation</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Unlimited conversions</li>
+        <!-- Big Hero Section with Background Image -->
+        <section class="hero-section" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0,0,0,0.6)), url('midiplayer.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 offset-lg-2 text-white my-5">
+                        <h1 class="display-1 fw-bold mb-4">Learn new songs faster with MIDI Visualisation</h1>
+                        <p class="lead mb-5">The same powerful falling-note visualisation from my YouTube channel, but interactive and customizable for faster learning. Practice with falling notes, adjust speeds, and turn any audio into playable MIDI files.</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <h4 class="fw-bold mb-3">Features</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Visual falling notes with key labels</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Adjustable playback speed</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Zoom in to keys for easier note reading</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Practice bookmarks and replay loops</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Upload and play any MIDI file</li>
                                 </ul>
-                                <div class="mb-4">
-                                    <h5 class="fw-bold mb-3">Try it now:</h5>
-                                    <div class="row g-2">
-                                        <div class="col-4">
-                                            <button class="btn btn-outline-secondary btn-sm w-100 play-btn" data-audio="audio1">
-                                                <i class="bi bi-play-fill"></i> Original
-                                            </button>
-                                            <audio id="audio1" src="audio/debussy.mp3"></audio>
-                                        </div>
-                                        <div class="col-4">
-                                            <button class="btn btn-outline-secondary btn-sm w-100 play-btn" data-audio="audio2">
-                                                <i class="bi bi-play-fill"></i> MIDI
-                                            </button>
-                                            <audio id="audio2" src="audio/debussy_out.mp3"></audio>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="midis/classical.mid" class="btn btn-outline-secondary btn-sm w-100" download>
-                                                <i class="bi bi-download"></i> Download
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="https://www.patreon.com/keshpianomusic" class="btn btn-primary btn-lg">Get Access</a>
                             </div>
-                            <div class="col-lg-6">
-                                <img src="midiplayer.png" class="img-fluid">
+                            <div class="col-md-6">
+                                <h4 class="fw-bold mb-3">Plus: Audio-to-MIDI converter</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> Convert any piano recording to MIDI</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> AI-powered chord recognition</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> Left/right hand separation</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> Unlimited conversions</li>
+                                </ul>
                             </div>
                         </div>
-                </section>
 
-                <!-- Simple CTA -->
-                <section class="py-5 text-center">
-                    <h3 class="fw-bold mb-3">Ready to practice more effectively?</h3>
-                    <p class="mb-4">Join my Patreon for unlimited access.</p>
-                    <a href="https://www.patreon.com/keshpianomusic" class="btn btn-secondary btn-lg">Join Now</a>
-                </section>
-                
+
+                        <!-- CTA Buttons -->
+                        <div class="d-flex flex-wrap gap-3 mb-5">
+                            <a href="https://play.keshpianomusic.com/demo" target="_blank" class="btn btn-secondary btn-lg">
+                                <i class="bi bi-play-circle me-2"></i>Try Demo
+                            </a>
+                            <a href="https://www.patreon.com/keshpianomusic" class="btn btn-secondary btn-lg">
+                                <i class="bi bi-unlock me-2"></i>Get Full Access on Patreon
+                            </a>
+                            <a href="https://play.keshpianomusic.com/" class="btn btn-outline-light btn-lg">
+                                <i class="bi bi-box-arrow-in-right me-2"></i>Member Login
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
     
     <footer-component></footer-component>

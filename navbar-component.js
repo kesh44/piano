@@ -2,7 +2,7 @@ class NavbarComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <nav class="navbar navbar-expand-sm navbar-light px-3">
-        <a class="navbar-brand d-flex align-items-center" href="index">
+        <a class="navbar-brand d-flex align-items-center" href="/">
           <img src="pp.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-3">
           <span class="kpm">keshpianomusic</span>
         </a>
