@@ -1,6 +1,6 @@
 body {
 	font-size: 100%;
-	background-color: #1b1b1b;
+	background-color: #080808;
 	font-family: 'SF Pro Display', sans-serif;  
 	color: #ffffff;
 	border: None;
@@ -192,10 +192,6 @@ video {
 	height: 25px;
 }
 
-.hero-section {
-    background: linear-gradient(135deg, #1b1b1b 0%, #2a2a2a 100%);
-    border-bottom: 1px solid #3a3a3a;
-}
 
 /* Additional dark theme enhancements */
 p {
@@ -262,6 +258,68 @@ a:hover {
 hr {
 	border-color: #3a3a3a;
 	opacity: 0.5;
+}
+
+/* Demo Button - Special prominent styling */
+.btn-demo {
+    background: linear-gradient(135deg, #a9ffd6, #6ee0b8);
+    border: none;
+    color: #1b1b1b;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(169, 255, 214, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: pulse-glow 2s infinite;
+}
+
+.btn-demo:hover {
+    background: linear-gradient(135deg, #a9ffd6, #5fd4a8);
+    color: #1b1b1b;
+    box-shadow: 0 12px 35px rgba(169, 255, 214, 0.4);
+    animation: none;
+}
+
+.btn-demo:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(169, 255, 214, 0.3);
+}
+
+.btn-demo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-demo:hover::before {
+    left: 100%;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(169, 255, 214, 0.3);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 8px 35px rgba(169, 255, 214, 0.5);
+        transform: scale(1.02);
+    }
+}
+
+/* Demo button icon styling */
+.btn-demo i {
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 /* Footer styling */
