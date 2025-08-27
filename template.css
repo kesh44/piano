@@ -59,22 +59,21 @@ body {
 
 .card {
 	font-size: 15px;
-	border: 1px solid #2a2a2a;
+	border: 1px solid rgba(42, 42, 42, 0.5);
 	color: #ffffff;
-	background-color: #252525;
-	border-radius: 12px;
+	background-color: rgba(37, 37, 37, 0.8);
+	border-radius: 8px;
 	overflow: hidden;
 	text-decoration: none;
 	max-width: 500px;
 	text-align: left;
-	transition: all 0.3s ease;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	transition: all 0.2s ease;
+	backdrop-filter: blur(10px);
 }
 
 .card:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-	border-color: #938de3;
+	transform: translateY(-1px);
+	border-color: rgba(147, 141, 227, 0.4);
 }
 
 .bg-card {
@@ -144,41 +143,40 @@ video {
 }
 
 .btn {
-	border-radius: 8px;
+	border-radius: 6px;
 	font-size: 15px;
-	transition: all 0.3s ease;
+	transition: all 0.2s ease;
+	font-weight: 400;
+	letter-spacing: 0.3px;
 }
 
 .btn-secondary {
 	color: #ffffff;
-    background-color: #938de3;
-    border: none;
-    border-bottom: 4px solid #7770c4;
+    background-color: rgba(147, 141, 227, 0.9);
+    border: 1px solid rgba(147, 141, 227, 0.3);
 }
 
 .btn-outline-secondary {
 	color: #938de3;
-    border: 2px solid #938de3;
-    border-bottom: 4px solid #7770c4;
+    border: 1px solid rgba(147, 141, 227, 0.4);
     background-color: transparent;
 }
 
 .btn-secondary:hover, .btn-outline-secondary:hover {
-    color: #1b1b1b;
-    background-color: #a9ffd6;
-    border-color: #8ee6c4;
-    transform: translateY(-1px);
+    color: #ffffff;
+    background-color: rgba(147, 141, 227, 1);
+    border-color: rgba(147, 141, 227, 0.6);
 }
 
 .btn-primary {
-    background-color: #938de3;
-    border: none;
+    background-color: rgba(147, 141, 227, 0.9);
+    border: 1px solid rgba(147, 141, 227, 0.3);
     color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: #7770c4;
-    transform: translateY(-1px);
+    background-color: rgba(147, 141, 227, 1);
+    border-color: rgba(147, 141, 227, 0.6);
 }
 
 .example {
@@ -192,6 +190,82 @@ video {
 	height: 25px;
 }
 
+
+/* Bundle Pricing Styles - Minimalist */
+.pricing-container {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(147, 141, 227, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    position: relative;
+    backdrop-filter: blur(10px);
+    transition: border-color 0.3s ease;
+}
+
+.pricing-container:hover {
+    border-color: rgba(147, 141, 227, 0.5);
+}
+
+.sale-badge {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    background: rgba(147, 141, 227, 0.9);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.original-price {
+    color: #666;
+    text-decoration: line-through;
+    font-size: 1.1rem;
+    margin-right: 12px;
+    font-weight: 400;
+}
+
+.sale-price {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.bundle-highlight {
+    color: #a9ffd6;
+    font-weight: 500;
+}
+
+.savings-amount {
+    background: rgba(169, 255, 214, 0.15);
+    color: #a9ffd6;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 12px;
+    border: 1px solid rgba(169, 255, 214, 0.3);
+}
+
+.product-count-badge {
+    background: rgba(147, 141, 227, 0.2);
+    color: #938de3;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 12px;
+    border: 1px solid rgba(147, 141, 227, 0.3);
+    vertical-align: middle;
+}
 
 /* Additional dark theme enhancements */
 p {
