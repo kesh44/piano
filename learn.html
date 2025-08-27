@@ -24,70 +24,191 @@
     <div class="main-content-wrapper">
         <navbar-component></navbar-component>
 
-        <!-- Big Hero Section with Background Image -->
-        <section class="hero-section"
-        ">
+        <!-- Hero Section - MIDI Visualiser (Flagship Product) -->
+        <section class="hero-section">
             <div class="container">
-                <div class="align-items-center">
-                    <div class="text-white my-5">
-                        <h1 class="display-4 fw-bold my-5 pt-5">Learn piano songs faster</h1>
-                        <p class="lead">The same falling-note visualisation from my YouTube channel, but interactive and customizable for faster learning. Copy the falling notes, adjust speeds, and turn any audio into playable MIDI files.</p>
-                        
-                        <!-- Primary CTA - Above the fold -->
-                        <div class="text-center my-5">
-                            <a href="https://play.keshpianomusic.com/player-demo" target="_blank" class="btn btn-demo">
-                                <i class="bi bi-play-circle"></i>Try the MIDI Visualiser
-                            </a>
-                            <p class="mt-3 mb-0 text-muted" style="font-size: 14px;">
-                                <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="text-muted">Get the full Piano Toolkit for $14.99</a> - One-time purchase, yours forever!
-                                <br>
-                            </p>
-                        </div>
-                        
-                        <img src="playa.png" alt="MIDI Visualiser" class="img-fluid mb-4 rounded-3">
-
-                        <div class="row g-0 mb-5 mt-2">
-                            <div class="col-md-6 text-center">
-                                <div class="d-flex align-items-center justify-content-center mb-3">
-                                    <h4 class="fw-bold mb-0 me-3">MIDI Visualiser</h4>
-                                    <a href="https://play.keshpianomusic.com/player-demo" target="_blank" class="btn btn-demo" style="padding: 4px 12px;">
-                                        <i class="bi bi-play-circle"></i>Demo
-                                    </a>
+                <div class="hero-content text-center text-white">
+                    
+                    <h1 class="hero-title display-2 fw-bold mb-4">MIDI Visualiser</h1>
+                    <p class="hero-subtitle lead mb-5">The same falling-note visualisation from my YouTube channel, but interactive and customizable for faster learning</p>
+                    
+                    <!-- Hero Image/Demo -->
+                    <div class="hero-image-container mb-4">
+                        <img src="playa.png" alt="MIDI Visualiser Interface" class="hero-image img-fluid rounded-4 shadow-lg">
+                    </div>
+                    
+                    <!-- Prominent Demo Button -->
+                    <div class="demo-button-container mb-5">
+                        <a href="https://play.keshpianomusic.com/player-demo" target="_blank" class="btn btn-demo btn-lg">
+                            <i class="bi bi-play-circle-fill me-2"></i>Try Free Demo
+                        </a>
+                        <p class="demo-subtitle mt-2 mb-0">Experience the MIDI visualiser in action</p>
+                    </div>
+                    
+                    <!-- Key Features Grid -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="bi bi-music-note-beamed"></i>
                                 </div>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Visual falling notes with key labels</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Adjustable playback speed</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Zoom in for easier note reading</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #6c63b5;"></i> Upload and play any MIDI file</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <div class="d-flex align-items-center justify-content-center mb-3">
-                                    <h4 class="fw-bold mb-0 me-3">Audio-to-MIDI converter</h4>
-                                    <a href="https://play.keshpianomusic.com/converter-demo" target="_blank" class="btn btn-demo" style="padding: 4px 12px;">
-                                        <i class="bi bi-play-circle"></i>Demo
-                                    </a>
-                                </div>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> Convert any piano recording to MIDI</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> AI-powered chord recognition</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> Left/right hand separation</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #00ffbf;"></i> Unlimited conversions</li>
-                                </ul>
+                                <h5>Visual Notes</h5>
+                                <p>Falling notes with key labels</p>
                             </div>
                         </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="bi bi-speedometer2"></i>
+                                </div>
+                                <h5>Speed Control</h5>
+                                <p>Adjustable playback speed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="bi bi-zoom-in"></i>
+                                </div>
+                                <h5>Zoom Feature</h5>
+                                <p>Zoom in for easier reading</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="bi bi-upload"></i>
+                                </div>
+                                <h5>Upload MIDIs</h5>
+                                <p>Play any MIDI file</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Primary CTA -->
+                    <div class="hero-cta">
+                        <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-primary btn-lg me-3 mb-3">
+                            <i class="bi bi-cart me-2"></i>Get Piano Toolkit - $14.99
+                        </a>
+                        <a href="https://play.keshpianomusic.com/" target="_blank" class="btn btn-outline-light btn-lg mb-3">
+                            <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                        </a>
+                        <p class="mt-3 text-muted small">One-time purchase, yours forever!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-                        <!-- CTA Buttons -->
-                        <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                            <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-outline-light btn-lg">
-                                <i class="bi bi-cart me-2"></i>Buy Piano Toolkit - $14.99
-                            </a>
-                            <a href="https://play.keshpianomusic.com/" class="btn btn-outline-light btn-lg">
-                                <i class="bi bi-box-arrow-in-right me-2"></i>Customer Login
+        <!-- Product 2: Audio-to-MIDI Converter -->
+        <section class="product-section bg-dark-card">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="product-visual">
+                            <div class="audio-wave-container">
+                                <i class="bi bi-soundwave display-1 text-success"></i>
+                                <div class="conversion-arrow">
+                                    <i class="bi bi-arrow-right-circle text-white"></i>
+                                </div>
+                                <i class="bi bi-file-music display-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="product-content">
+                            <div class="product-badge mb-3">
+                                <span class="badge bg-success">🤖 AI-Powered</span>
+                            </div>
+                            <h2 class="product-title display-4 fw-bold mb-4">Audio-to-MIDI Converter</h2>
+                            <p class="product-description lead mb-4">Transform any piano recording into playable MIDI files using advanced AI technology</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Convert any piano recording to MIDI</span>
+                                </div>
+                                <div class="feature-item mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>AI-powered chord recognition</span>
+                                </div>
+                                <div class="feature-item mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Left/right hand separation</span>
+                                </div>
+                                <div class="feature-item mb-4">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Unlimited conversions</span>
+                                </div>
+                            </div>
+                            
+                            <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-success btn-lg">
+                                <i class="bi bi-robot me-2"></i>Try AI Converter
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Product 3: YouTube Player Control Bar -->
+        <section class="product-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="product-visual">
+                            <div class="youtube-player-mockup">
+                                <div class="youtube-frame">
+                                    <div class="youtube-header">
+                                        <i class="bi bi-youtube text-danger me-2"></i>
+                                        <span>Piano Tutorial</span>
+                                    </div>
+                                    <div class="youtube-video-area">
+                                        <i class="bi bi-play-circle display-1 text-white"></i>
+                                    </div>
+                                    <div class="youtube-controls">
+                                        <div class="control-bar">
+                                            <i class="bi bi-skip-backward"></i>
+                                            <i class="bi bi-play-fill"></i>
+                                            <i class="bi bi-skip-forward"></i>
+                                            <div class="progress-bar"></div>
+                                            <i class="bi bi-volume-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-content">
+                            <div class="product-badge mb-3">
+                                <span class="badge bg-danger">📺 Browser Extension</span>
+                            </div>
+                            <h2 class="product-title display-4 fw-bold mb-4">YouTube Player Controls</h2>
+                            <p class="product-description lead mb-4">Enhanced playback controls for piano tutorials with precise timing and loop features</p>
+                            
+                            <div class="feature-list">
+                                <div class="feature-item mb-3">
+                                    <i class="bi bi-check-circle-fill text-danger me-3"></i>
+                                    <span>Frame-by-frame navigation</span>
+                                </div>
+                                <div class="feature-item mb-3">
+                                    <i class="bi bi-check-circle-fill text-danger me-3"></i>
+                                    <span>Custom loop sections</span>
+                                </div>
+                                <div class="feature-item mb-3">
+                                    <i class="bi bi-check-circle-fill text-danger me-3"></i>
+                                    <span>Speed adjustment with pitch preservation</span>
+                                </div>
+                                <div class="feature-item mb-4">
+                                    <i class="bi bi-check-circle-fill text-danger me-3"></i>
+                                    <span>Keyboard shortcuts for learning</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-danger btn-lg">
+                                <i class="bi bi-download me-2"></i>Download Extension
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
