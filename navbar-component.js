@@ -13,7 +13,7 @@ class NavbarComponent extends HTMLElement {
         </button>
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto flex-row flex-lg-row align-items-center">
-            <li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="resources">Resources</a></li>
+            <li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="midi">MIDI</a></li>
             <li class="nav-item mx-2 d-flex align-items-center"><a class="nav-link" href="learn">Learn</a></li>
             <li class="nav-item mx-2 d-flex align-items-center">
               <a class="nav-link mt-1" href="https://youtube.com/@keshpianomusic" target="_blank" title="YouTube">
