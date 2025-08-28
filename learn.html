@@ -24,134 +24,178 @@
     <div class="main-content-wrapper">
         <navbar-component></navbar-component>
 
-        <!-- Hero Section - MIDI Visualiser (Flagship Product) -->
-        <section class="hero-section">
+        <!-- Header Section -->
+        <section class="header-section">
             <div class="container">
-                <div class="hero-content text-center text-white">
+                <div class="text-center text-white py-3">
+                    <h1 class="hero-title display-4 fw-bold mb-4">The Complete Piano Toolkit</h1>
+                    <p class="hero-subtitle lead mb-0">Everything you need to learn piano, designed by Kesh</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Cards Section -->
+        <section class="product-cards-section py-5">
+            <div class="container">
+                <div class="row g-4 mb-5">
+                    <!-- MIDI Visualiser Card -->
+                    <div class="col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-card-icon">
+                                <i class="bi bi-music-note-beamed"></i>
+                            </div>
+                            <h3 class="product-card-title">MIDI Visualiser</h3>
+                            <p class="product-card-description">See falling notes with key labels. Control playback speed and zoom for easier learning.</p>
+                            <div class="product-card-features">
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Visual falling notes</span>
+                                </div>
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Speed control</span>
+                                </div>
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Zoom functionality</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <h1 class="hero-title display-4 fw-bold mb-4">Kesh's Piano Learning Toolkit</h1>
-                    <p class="hero-subtitle lead mb-5">Complete bundle of tools to help you learn the songs you love</p>
+                    <!-- AI Audio Converter Card -->
+                    <div class="col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-card-icon">
+                                <i class="bi bi-soundwave"></i>
+                            </div>
+                            <h3 class="product-card-title">AI Audio Converter</h3>
+                            <p class="product-card-description">Transform any audio recording into MIDI files using advanced AI technology.</p>
+                            <div class="product-card-features">
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Audio to MIDI conversion</span>
+                                </div>
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>AI-powered recognition</span>
+                                </div>
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Unlimited conversions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <!-- Hero Image/Demo -->
+                    <!-- YouTube Controls Card -->
+                    <div class="col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-card-icon">
+                                <i class="bi bi-youtube"></i>
+                            </div>
+                            <h3 class="product-card-title">YouTube Controls</h3>
+                            <p class="product-card-description">Enhanced playback controls for YouTube videos with timing and bookmark features.</p>
+                            <div class="product-card-features">
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>One-click speed control</span>
+                                </div>
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Custom timestamp controls</span>
+                                </div>
+                                <div class="feature-item mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <span>Easy navigation buttons</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Initial CTA -->
+                <div class="text-center mb-1">
+                    <div class="pricing-highlight mb-3">
+                        <div class="price-container">
+                            <span class="original-price">Usually $24.99</span>
+                            <span class="current-price">$14.99</span>
+                        </div>
+                        <p class="savings-text">Save $10 when you get all three tools</p>
+                        <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-primary btn-lg mt-4 mb-3">
+                            <i class="bi bi-cart me-2"></i>Get Complete Toolkit - $14.99
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MIDI Visualiser Hero Section -->
+        <section class="midi-hero-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title display-5 fw-bold mb-3">MIDI Visualiser</h2>
+                    <p class="section-subtitle lead">Experience interactive piano learning with falling notes</p>
+                </div>
+                <div class="hero-demo-container">
                     <div class="hero-image-container mb-4">
                         <img src="playa.png" alt="MIDI Visualiser Interface" class="hero-image img-fluid rounded-4 shadow-lg">
                     </div>
-                    
-                    <!-- Prominent Demo Button -->
-                    <div class="demo-button-container mb-5">
+                    <div class="demo-button-container text-center">
                         <a href="https://play.keshpianomusic.com/player-demo" target="_blank" class="btn btn-demo btn-lg">
-                            <i class="bi bi-play-circle-fill me-2"></i>Try Free Demo
+                            <i class="bi bi-play-circle-fill me-2"></i>Try Interactive Demo
                         </a>
-                        <p class="demo-subtitle mt-2 mb-0">Experience the MIDI visualiser in action</p>
-                    </div>
-                    
-                    <!-- Key Features Grid -->
-                    <div class="row g-4 mb-5">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                </div>
-                                <h5>Visual Notes</h5>
-                                <p>Falling notes with key labels</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="bi bi-speedometer2"></i>
-                                </div>
-                                <h5>Speed Control</h5>
-                                <p>Adjustable playback speed</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="bi bi-zoom-in"></i>
-                                </div>
-                                <h5>Zoom Feature</h5>
-                                <p>Zoom in for easier reading</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="bi bi-upload"></i>
-                                </div>
-                                <h5>Upload MIDIs</h5>
-                                <p>Play any MIDI file</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Bundle Pricing Section -->
-                    <div class="pricing-container">
-                        <div class="sale-badge">
-                            Sale
-                        </div>
-                        <h3 class="mb-3">Complete Piano Learning Bundle</h3>
-                        <div class="pricing-details text-center mb-4">
-                            <div class="price-line mb-2">
-                                <span class="original-price">Usually $24.99</span>
-                                <span class="sale-price">$14.99</span>
-                                <span class="savings-amount">$10 off</span>
-                            </div>
-                            <p class="mb-3"><strong>All 3 Tools Included:</strong></p>
-                            <div class="row text-start">
-                                <div class="col-md-4 mb-2">
-                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                    <span>MIDI Visualiser</span>
-                                </div>
-                                <div class="col-md-4 mb-2">
-                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                    <span>AI Audio Converter</span>
-                                </div>
-                                <div class="col-md-4 mb-2">
-                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                    <span>YouTube Controls</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Primary CTA -->
-                    <div class="hero-cta">
-                        <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-primary btn-lg me-3 mb-3">
-                            <i class="bi bi-cart me-2"></i>Get Complete Bundle - $14.99
-                        </a>
-                        <a href="https://play.keshpianomusic.com/" target="_blank" class="btn btn-outline-light btn-lg mb-3">
-                            <i class="bi bi-box-arrow-in-right me-2"></i>Login
-                        </a>
-                        <p class="mt-3 text-muted small">One-time purchase • <span class="bundle-highlight">40% off</span> today</p>
+                        <p class="demo-subtitle mt-2 mb-0">No download required • Works in your browser</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Product 2: Audio-to-MIDI Converter -->
+                <!-- Audio-to-MIDI Converter Section -->
         <section class="product-section bg-dark-card">
             <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title display-5 fw-bold mb-3">AI Audio-to-MIDI Converter</h2>
+                    <p class="section-subtitle lead">Transform any piano recording into MIDI files using AI</p>
+                </div>
+                
                 <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="product-visual">
-                            <div class="audio-wave-container">
-                                <i class="bi bi-soundwave display-1 text-success"></i>
-                                <div class="conversion-arrow">
-                                    <i class="bi bi-arrow-right-circle text-white"></i>
+                    <div class="col-lg-8 order-lg-2">
+                        <!-- Audio Examples Section -->
+                        <div class="audio-examples-section">
+                            <h4 class="mb-3 text-white">🎵 Hear the Difference</h4>
+                            <p class="text-muted mb-4">Listen to original piano recordings and their AI-converted MIDI outputs</p>
+                            
+                            <div class="examples-grid">
+                                <!-- Classical Example -->
+                                <div class="example-row mb-4">
+                                    <h6 class="example-title text-success mb-3">Classical Piano (Debussy)</h6>
+                                    <div class="audio-comparison">
+                                        <div class="audio-item">
+                                            <div class="audio-label">Original Audio</div>
+                                            <button class="custom-play-btn" data-audio="debussy-input">
+                                                <i class="bi bi-play-fill"></i>
+                                                <span class="play-text">Play Original</span>
+                                            </button>
+                                        </div>
+                                        <div class="conversion-indicator">
+                                            <i class="bi bi-arrow-right text-success"></i>
+                                        </div>
+                                        <div class="audio-item">
+                                            <div class="audio-label">AI-Generated MIDI</div>
+                                            <button class="custom-play-btn" data-audio="debussy-output">
+                                                <i class="bi bi-play-fill"></i>
+                                                <span class="play-text">Play MIDI</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <i class="bi bi-file-music display-1 text-primary"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-lg-1">
+                    <div class="col-lg-4 order-lg-1">
                         <div class="product-content">
-                            <div class="product-badge mb-3">
-                                <span class="badge bg-success">🤖 AI-Powered</span>
-                            </div>
-                            <h2 class="product-title display-4 fw-bold mb-4">Audio-to-MIDI Converter</h2>
-                            <p class="product-description lead mb-4">Transform any piano recording into playable MIDI files using advanced AI technology</p>
-                            
                             <div class="feature-list">
                                 <div class="feature-item mb-3">
                                     <i class="bi bi-check-circle-fill text-success me-3"></i>
@@ -170,20 +214,20 @@
                                     <span>Unlimited conversions</span>
                                 </div>
                             </div>
-                            
-                            <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-success btn-lg">
-                                <i class="bi bi-robot me-2"></i>Get Bundle with AI Converter - $14.99
-                            </a>
-                            <p class="mt-2 small text-muted">Included in Piano Learning Toolkit</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Product 3: YouTube Player Control Bar -->
+        <!-- YouTube Player Controls Section -->
         <section class="product-section">
             <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title display-5 fw-bold mb-3">YouTube Player Controls</h2>
+                    <p class="section-subtitle lead">Enhanced controls for piano tutorials with precise timing</p>
+                </div>
+                
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="product-visual">
@@ -211,12 +255,6 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="product-content">
-                            <div class="product-badge mb-3">
-                                <span class="badge bg-danger">📺 Browser Extension</span>
-                            </div>
-                            <h2 class="product-title display-4 fw-bold mb-4">YouTube Player Controls</h2>
-                            <p class="product-description lead mb-4">Enhanced playback controls for piano tutorials with precise timing and loop features</p>
-                            
                             <div class="feature-list">
                                 <div class="feature-item mb-3">
                                     <i class="bi bi-check-circle-fill text-danger me-3"></i>
@@ -235,12 +273,19 @@
                                     <span>Keyboard shortcuts for learning</span>
                                 </div>
                             </div>
-                            
-                            <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-danger btn-lg">
-                                <i class="bi bi-download me-2"></i>Get Bundle with YouTube Controls - $14.99
-                            </a>
-                            <p class="mt-2 small text-muted">Included in Piano Learning Toolkit</p>
                         </div>
+                    </div>
+                </div>
+                
+                <!-- Final CTA -->
+                <div class="text-center mt-5">
+                    <div class="final-cta-container">
+                        <h3 class="mb-3">Get All Three Tools Today</h3>
+                        <p class="lead mb-4">Everything you need in one complete toolkit</p>
+                        <a href="https://keshpianomusic.gumroad.com/l/toolkit" target="_blank" class="btn btn-primary btn-lg">
+                            <i class="bi bi-cart me-2"></i>Get Complete Toolkit - $14.99
+                        </a>
+                        <p class="mt-3 text-muted small">One-time purchase • Instant download • 40% off today</p>
                     </div>
                 </div>
             </div>
@@ -249,37 +294,89 @@
     
     <footer-component></footer-component>
     
+    <!-- Hidden Audio Elements -->
+    <audio id="debussy-input" preload="none">
+        <source src="audio/debussy.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="debussy-output" preload="none">
+        <source src="audio/debussy_out.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="pop-input" preload="none">
+        <source src="audio/pop.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="pop-output" preload="none">
+        <source src="audio/pop-out.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="chords-input" preload="none">
+        <source src="audio/chords.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="chords-output" preload="none">
+        <source src="audio/chords-out.mp3" type="audio/mpeg">
+    </audio>
+    
     <script>
-        const buttons = document.querySelectorAll('.play-btn');
+        // Audio Examples Play Button Functionality
+        const customPlayButtons = document.querySelectorAll('.custom-play-btn');
         
-        buttons.forEach(btn => {
+        customPlayButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 const audioId = btn.getAttribute('data-audio');
                 const audio = document.getElementById(audioId);
                 const icon = btn.querySelector('i');
+                const playText = btn.querySelector('.play-text');
                 
-                // Pause and reset others
-                buttons.forEach(otherBtn => {
-                    const otherAudio = document.getElementById(otherBtn.getAttribute('data-audio'));
+                // Pause and reset all other audio
+                customPlayButtons.forEach(otherBtn => {
+                    const otherAudioId = otherBtn.getAttribute('data-audio');
+                    const otherAudio = document.getElementById(otherAudioId);
                     const otherIcon = otherBtn.querySelector('i');
+                    const otherPlayText = otherBtn.querySelector('.play-text');
                     
-                    if (otherAudio !== audio) {
+                    if (otherAudio !== audio && !otherAudio.paused) {
                         otherAudio.pause();
                         otherAudio.currentTime = 0;
                         otherIcon.className = 'bi bi-play-fill';
+                        otherBtn.classList.remove('playing');
+                        // Update play text based on audio type
+                        if (otherAudioId.includes('input')) {
+                            otherPlayText.textContent = 'Play Original';
+                        } else {
+                            otherPlayText.textContent = 'Play MIDI';
+                        }
                     }
                 });
                 
                 if (audio.paused) {
-                    audio.play();
-                    icon.className = 'bi bi-pause-fill';
+                    audio.play().then(() => {
+                        icon.className = 'bi bi-pause-fill';
+                        btn.classList.add('playing');
+                        playText.textContent = 'Playing...';
+                    }).catch(e => {
+                        console.error('Audio playback failed:', e);
+                    });
                 } else {
                     audio.pause();
+                    audio.currentTime = 0;
                     icon.className = 'bi bi-play-fill';
+                    btn.classList.remove('playing');
+                    // Reset play text based on audio type
+                    if (audioId.includes('input')) {
+                        playText.textContent = 'Play Original';
+                    } else {
+                        playText.textContent = 'Play MIDI';
+                    }
                 }
                 
+                // Handle audio ended event
                 audio.onended = () => {
                     icon.className = 'bi bi-play-fill';
+                    btn.classList.remove('playing');
+                    // Reset play text based on audio type
+                    if (audioId.includes('input')) {
+                        playText.textContent = 'Play Original';
+                    } else {
+                        playText.textContent = 'Play MIDI';
+                    }
                 };
             });
         });
