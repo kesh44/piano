@@ -39,13 +39,13 @@ body {
 	color: #cdcdcd;
 }
 
-.kmp {
+.kpm {
 	font-weight: bold;
 	color: #ffffff;
 	transition: color 0.3s ease;
 }
 
-.kmp:hover {
+.kpm:hover {
 	color: #938de3;
 }
 
@@ -169,9 +169,9 @@ body {
 
 /* Pricing */
 .pricing-highlight {
-	background: rgba(255, 255, 255, 0.02);
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	border-radius: 16px;
+	/* background: rgba(255, 255, 255, 0.02); */
+	/* border: 1px solid rgba(255, 255, 255, 0.08); */
+	/* border-radius: 16px; */
 	padding: 24px;
 	display: inline-block;
 }
@@ -206,43 +206,131 @@ body {
 	margin: 0 auto;
 }
 
-/* Buttons */
-.btn-demo {
-	background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
-	border: none;
+/* Unified Button System */
+.btn {
+	position: relative;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 12px;
-	color: white;
+	color: #ffffff;
 	padding: 16px 32px;
 	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
 	transition: all 0.3s ease;
-	position: relative;
+	backdrop-filter: blur(10px);
 	overflow: hidden;
+	cursor: pointer;
 }
 
-.btn-demo::before {
+.btn::before {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
 
-.btn-demo:hover {
+.btn:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+	border-color: rgba(169, 255, 214, 0.4);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	color: #ffffff;
+	text-decoration: none;
 }
 
-.btn-demo:hover::before {
+.btn:hover::before {
 	opacity: 1;
 }
 
-.btn-demo:active {
+.btn:active {
 	transform: translateY(0);
 }
 
-.btn-demo i {
-	margin-right: 8px;
+.btn:focus {
+	outline: none;
+	border-color: rgba(169, 255, 214, 0.6);
+	box-shadow: 0 0 0 2px rgba(169, 255, 214, 0.2);
+}
+
+/* Button Variants */
+.btn-primary {
+	background: linear-gradient(135deg, rgba(169, 255, 214, 0.15) 0%, rgba(169, 255, 214, 0.05) 100%);
+	border-color: rgba(169, 255, 214, 0.3);
+}
+
+.btn-primary:hover {
+	background: linear-gradient(135deg, rgba(169, 255, 214, 0.25) 0%, rgba(169, 255, 214, 0.1) 100%);
+	border-color: rgba(169, 255, 214, 0.5);
+	box-shadow: 0 8px 25px rgba(169, 255, 214, 0.2);
+}
+
+.btn-outline-light {
+	background: rgba(255, 255, 255, 0.02);
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline-light:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(255, 255, 255, 0.4);
+	color: #ffffff;
+}
+
+.btn-light {
+	background: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.2);
+	color: #000000;
+}
+
+.btn-light:hover {
+	background: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.4);
+	color: #000000;
+}
+
+/* Size Variants */
+.btn-lg {
+	padding: 18px 36px;
+	font-size: 16px;
+	border-radius: 14px;
+}
+
+.btn-sm {
+	padding: 12px 24px;
+	font-size: 13px;
+	border-radius: 10px;
+}
+
+/* Special Button Variants */
+.btn-demo {
+	background: linear-gradient(135deg, rgba(124, 58, 237, 0.2) 0%, rgba(168, 85, 247, 0.1) 100%);
+	border-color: rgba(124, 58, 237, 0.4);
+}
+
+.btn-demo:hover {
+	background: linear-gradient(135deg, rgba(124, 58, 237, 0.3) 0%, rgba(168, 85, 247, 0.15) 100%);
+	border-color: rgba(124, 58, 237, 0.6);
+	box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+}
+
+/* Home page card buttons */
+.btn-primary.w-100 {
+	flex-direction: column;
+	padding: 24px;
+	min-height: 120px;
+	background: linear-gradient(135deg, rgba(111, 66, 193, 0.15) 0%, rgba(111, 66, 193, 0.05) 100%);
+	border-color: rgba(111, 66, 193, 0.3);
+}
+
+.btn-primary.w-100:hover {
+	background: linear-gradient(135deg, rgba(111, 66, 193, 0.25) 0%, rgba(111, 66, 193, 0.1) 100%);
+	border-color: rgba(111, 66, 193, 0.5);
+	box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
 }
 
 /* Audio Examples */
@@ -279,8 +367,9 @@ body {
 }
 
 .custom-play-btn {
-	background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-	border: 2px solid #3a3a3a;
+	position: relative;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 12px;
 	padding: 16px 24px;
 	color: #ffffff;
@@ -293,18 +382,32 @@ body {
 	font-weight: 500;
 	font-size: 14px;
 	min-width: 140px;
+	backdrop-filter: blur(10px);
+	overflow: hidden;
+}
+
+.custom-play-btn::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
 .custom-play-btn:hover {
-	border-color: #28a745;
-	background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
+	border-color: rgba(40, 167, 69, 0.4);
 	transform: translateY(-2px);
 	box-shadow: 0 8px 25px rgba(40, 167, 69, 0.2);
 }
 
+.custom-play-btn:hover::before {
+	opacity: 1;
+}
+
 .custom-play-btn.playing {
-	border-color: #28a745;
-	background: linear-gradient(135deg, #28a745 0%, #20803d 100%);
+	background: linear-gradient(135deg, rgba(40, 167, 69, 0.2) 0%, rgba(32, 128, 61, 0.1) 100%);
+	border-color: rgba(40, 167, 69, 0.5);
 	box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
 }
 
