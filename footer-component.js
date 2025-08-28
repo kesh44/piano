@@ -10,8 +10,8 @@ class FooterComponent extends HTMLElement {
             </div>
             <div class="col-md-4 text-center">
               <div class="footer-links">
-                <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
-                <a href="#" class="text-decoration-none">Terms of Use</a>
+                <a href="#" class="text-decoration-none link-light me-3">Privacy Policy</a>
+                <a href="#" class="text-decoration-none link-light">Terms of Use</a>
               </div>
             </div>
             <div class="col-md-4 text-end">
