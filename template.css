@@ -139,6 +139,17 @@ body {
 	color: #a9ffd6;
 }
 
+.product-card-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.product-card-link:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
 .product-card-title {
 	font-size: 24px;
 	font-weight: 600;
