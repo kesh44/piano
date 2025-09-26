@@ -6,6 +6,7 @@
 body {
 	font-family: 'SF Pro Display', sans-serif;  
 	background-color: #080808;
+	/* background-color: #ffffff; */
 	color: #ffffff;
 	min-height: 100vh;
 	display: flex;
@@ -55,7 +56,7 @@ body {
 }
 
 .section-subtitle {
-	color: #b0b0b0;
+	color: #080808;
 }
 
 /* Section Backgrounds */
@@ -285,13 +286,11 @@ body {
 .btn-light {
 	background: rgba(255, 255, 255, 0.1);
 	border-color: rgba(255, 255, 255, 0.2);
-	color: #000000;
 }
 
 .btn-light:hover {
 	background: rgba(255, 255, 255, 0.2);
 	border-color: rgba(255, 255, 255, 0.4);
-	color: #000000;
 }
 
 /* Size Variants */

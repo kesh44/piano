@@ -2,71 +2,474 @@
 <html lang="en">
 
 <head>
-  <title>Kesh's YouTube Channel</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  
-  <link rel="stylesheet" href="template.css"/>
-  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="navbar-component.js"></script>
-  <script src="footer-component.js"></script>
+    <title>Kesh's Piano Toolkit - Learn Songs Faster</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="template.css"/>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="navbar-component.js"></script>
+    <script src="footer-component.js"></script>
 </head>
 
 <body>
-  
-  <div class="main-content-wrapper">
-    <navbar-component></navbar-component>
-    
-    <section class="container text-center py-5">
-      <h1 class="display-4 fw-bold pt-5">Piano tutorials by Kesh</h1>
-      <p class="mt-3 mb-1">Hey, I’m Kesh! I make piano tutorials on YouTube and love helping people learn new songs. This site is where I share all my favorite tools and resources to make your piano journey easier!</p>
-    </section>
-    
-    <!-- Stats Section -->
-    <section class="container text-center py-4">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="px-4">
-          <h3 class="fw-bold mb-1">60K+</h3>
-          <p class="text-muted mb-0">YouTube Subscribers</p>
-        </div>
-        <div class="px-4">
-          <h3 class="fw-bold mb-1">70K+</h3>
-          <p class="text-muted mb-0">MIDI Files Given Away</p>
-        </div>
-      </div>
-    </section>
-    
-    
-        <div>
-      <div id="main" class="container pb-5 text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <a href="midi" class="btn btn-primary btn-lg w-100 py-4">
-              <h4 class="mb-2">MIDI</h4>
-              <p class="mb-0 small">Download my MIDI files or create your own using my AI tools.</p>
-            </a>
-          </div>
-          <div class="col-md-4 mb-3">
-            <a href="learn" class="btn btn-primary btn-lg w-100 py-4">
-              <h4 class="mb-2">Learn New Songs</h4>
-              <p class="mb-0 small">Tools for helping you learn more piano songs.</p>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="main-content-wrapper">
+        <navbar-component></navbar-component>
+        
+        <!-- Header Section -->
+        <section class="">
+            <div class="container pt-5">
+                <div class="text-center pt-5 pb-3">
+                    <h1 class="hero-title display-4 fw-bold mb-3">The Complete Piano Toolkit</h1>
+                    <p class="hero-subtitle lead mb-4">Everything you need to learn new songs faster, designed by Kesh.</p>
+                    
+                </div>
+            </div>
+            <!-- Stats Section -->
+            <section class="container text-center pt-3 pb-5">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="px-4">
+                        <h3 class="fw-bold mb-1">60K+</h3>
+                        <p class="text-muted mb-0">YouTube Subscribers</p>
+                    </div>
+                    <div class="px-4">
+                        <h3 class="fw-bold mb-1">70K+</h3>
+                        <p class="text-muted mb-0">MIDI Files Given Away</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <!-- Tools Accordion Section -->
+        <section class="tools-accordion-section py-5">
+            <div class="container">                
+                <!-- Accordion -->
+                <div class="accordion accordion-premium" id="toolsAccordion">
+                    <!-- MIDI Visualiser -->
+                    <div class="accordion-item premium-glass mb-4">
+                        <h2 class="accordion-header" id="headingMidi">
+                            <button class="accordion-button premium-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMidi" aria-expanded="true" aria-controls="collapseMidi">
+                                <div class="row align-items-center w-100 me-3">
+                                    <div class="col-lg-1 text-center">
+                                        <div class="tool-icon">
+                                            <i class="bi bi-music-note-beamed"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="tool-preview">
+                                            <h4 class="fw-bold mb-2">MIDI Visualiser</h4>
+                                            <p class="mb-0 text-muted">See falling notes with interactive controls, just like my YouTube videos</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-end d-none d-lg-block">
+                                        <div class="tool-preview-media">
+                                            <video src="midiplayer.mov" muted playsinline class="img-fluid rounded" style="max-height: 80px; width: auto;" alt="MIDI Visualiser Preview"></video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseMidi" class="accordion-collapse collapse show" aria-labelledby="headingMidi" data-bs-parent="#toolsAccordion">
+                            <div class="accordion-body premium-body">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="tool-content">
+                                            <p class="lead mb-4">The same falling note visualization from my YouTube videos, now interactive</p>
+                                            <div class="feature-list mb-4">
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Visual falling notes with key labels
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Speed control for practice
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Zoom and bookmark features
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Practice hands separately
+                                                </div>
+                                            </div>
+                                            <a href="https://play.keshpianomusic.com/player-demo" target="_blank" class="btn btn-primary">
+                                                <i class="bi bi-music-note-beamed me-2"></i>Try Interactive Demo
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tool-demo">
+                                            <video src="midiplayer.mov" autoplay loop muted playsinline class="img-fluid rounded-4 shadow-lg" alt="MIDI Visualiser Demo"></video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Audio Converter -->
+                    <div class="accordion-item premium-glass mb-4">
+                        <h2 class="accordion-header" id="headingConverter">
+                            <button class="accordion-button collapsed premium-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConverter" aria-expanded="false" aria-controls="collapseConverter">
+                                <div class="row align-items-center w-100 me-3">
+                                    <div class="col-lg-1 text-center">
+                                        <div class="tool-icon">
+                                            <i class="bi bi-cpu"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="tool-preview">
+                                            <h4 class="fw-bold mb-2">AI Audio Converter</h4>
+                                            <p class="mb-0 text-muted">Transform any piano recording into MIDI files using advanced AI</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-end d-none d-lg-block">
+                                        <div class="tool-preview-media">
+                                            <div class="preview-audio-demo">
+                                                <div class="btn btn-sm btn-outline-light disabled">
+                                                    <i class="bi bi-soundwave me-1"></i>Audio → MIDI
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseConverter" class="accordion-collapse collapse" aria-labelledby="headingConverter" data-bs-parent="#toolsAccordion">
+                            <div class="accordion-body premium-body">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="tool-content">
+                                            <p class="lead mb-4">Upload any piano recording and get a clean MIDI file back</p>
+                                            <div class="feature-list mb-4">
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Convert audio recordings to MIDI
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    AI-powered chord recognition
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Separate left/right hand parts
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Unlimited conversions
+                                                </div>
+                                            </div>
+                                            <a href="https://play.keshpianomusic.com/converter-demo" target="_blank" class="btn btn-primary">
+                                                <i class="bi bi-soundwave me-2"></i>Try Free Demo
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tool-demo text-center">
+                                            <div class="audio-examples-section">
+                                                <h5 class="mb-3">Hear it in action</h5>
+                                                <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                                                    <button class="custom-play-btn" data-audio="debussy-input">
+                                                        <i class="bi bi-play-fill"></i>
+                                                        <span class="play-text">Original</span>
+                                                    </button>
+                                                    <span class="text-muted">→</span>
+                                                    <button class="custom-play-btn" data-audio="debussy-output">
+                                                        <i class="bi bi-play-fill"></i>
+                                                        <span class="play-text">MIDI</span>
+                                                    </button>
+                                                </div>
+                                                <div class="mt-3 text-muted small">
+                                                    Debussy, La Fille aux Cheveux de Lin
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- YouTube Controls -->
+                    <div class="accordion-item premium-glass mb-4">
+                        <h2 class="accordion-header" id="headingYoutube">
+                            <button class="accordion-button collapsed premium-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYoutube" aria-expanded="false" aria-controls="collapseYoutube">
+                                <div class="row align-items-center w-100 me-3">
+                                    <div class="col-lg-1 text-center">
+                                        <div class="tool-icon">
+                                            <i class="bi bi-play-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="tool-preview">
+                                            <h4 class="fw-bold mb-2">YouTube Video Controls</h4>
+                                            <p class="mb-0 text-muted">Enhanced controls for piano tutorials with precise timing and bookmarks</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-end d-none d-lg-block">
+                                        <div class="tool-preview-media">
+                                            <img src="ytplayer.png" alt="YouTube Controls Preview" class="img-fluid rounded" style="max-height: 60px; width: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseYoutube" class="accordion-collapse collapse" aria-labelledby="headingYoutube" data-bs-parent="#toolsAccordion">
+                            <div class="accordion-body premium-body">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="tool-content">
+                                            <p class="lead mb-4">Perfect for following along with tutorials and practicing specific sections</p>
+                                            <div class="feature-list mb-4">
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    One-click speed control (0.25x to 2x)
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Custom timestamp bookmarks
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Loop difficult sections
+                                                </div>
+                                                <div class="feature-item mb-2">
+                                                    <i class="bi bi-check2 text-success me-2"></i>
+                                                    Works with any YouTube video
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-info">
+                                                <i class="bi bi-info-circle me-2"></i>
+                                                Available in the complete toolkit
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tool-demo text-center">
+                                            <img src="ytplayer.png" alt="YouTube Player Controls" class="img-fluid rounded shadow-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section class="pricing-section py-5">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <h2 class="display-6 fw-bold mb-4">Start Learning Today</h2>
+                    <p class="lead mb-4">No download required. Works on any device. Designed for fast, independent learning.</p>
+                    
+                    <div class="pricing-card mb-4">
+                        <div class="price-container mb-3">
+                            <span class="original-price text-decoration-line-through text-muted">$9.99</span>
+                            <span class="current-price display-4 fw-bold text-light">$2.99</span>
+                            <span class="badge bg-danger ms-2">70% OFF</span>
+                        </div>
+                        <p class="text-muted mb-4">One-time purchase • Lifetime access • All future updates included</p>
+                        <a href="https://kesh44.gumroad.com/l/toolkit" target="_blank" class="btn btn-primary btn-lg px-5 py-3 mb-3">
+                            <i class="bi bi-cart me-2"></i>Get The Complete Toolkit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     
-  </div>
-  
-  <footer-component></footer-component>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer-component></footer-component>
+    
+    <!-- Hidden Audio Elements -->
+    <audio id="debussy-input" preload="none">
+        <source src="audio/debussy.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="debussy-output" preload="none">
+        <source src="audio/debussy_out.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        // Audio Examples Play Button Functionality
+        const customPlayButtons = document.querySelectorAll('.custom-play-btn');
+        
+        customPlayButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const audioId = btn.getAttribute('data-audio');
+                const audio = document.getElementById(audioId);
+                const icon = btn.querySelector('i');
+                const playText = btn.querySelector('.play-text');
+                
+                // Pause and reset all other audio
+                customPlayButtons.forEach(otherBtn => {
+                    const otherAudioId = otherBtn.getAttribute('data-audio');
+                    const otherAudio = document.getElementById(otherAudioId);
+                    const otherIcon = otherBtn.querySelector('i');
+                    const otherPlayText = otherBtn.querySelector('.play-text');
+                    
+                    if (otherAudio !== audio && !otherAudio.paused) {
+                        otherAudio.pause();
+                        otherAudio.currentTime = 0;
+                        otherIcon.className = 'bi bi-play-fill';
+                        otherBtn.classList.remove('playing');
+                        // Update play text based on audio type
+                        if (otherAudioId.includes('input')) {
+                            otherPlayText.textContent = 'Original';
+                        } else {
+                            otherPlayText.textContent = 'MIDI';
+                        }
+                    }
+                });
+                
+                if (audio.paused) {
+                    audio.play().then(() => {
+                        icon.className = 'bi bi-pause-fill';
+                        btn.classList.add('playing');
+                        playText.textContent = 'Playing...';
+                    }).catch(e => {
+                        console.error('Audio playback failed:', e);
+                    });
+                } else {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    icon.className = 'bi bi-play-fill';
+                    btn.classList.remove('playing');
+                    // Reset play text based on audio type
+                    if (audioId.includes('input')) {
+                        playText.textContent = 'Original';
+                    } else {
+                        playText.textContent = 'MIDI';
+                    }
+                }
+                
+                // Handle audio ended event
+                audio.onended = () => {
+                    icon.className = 'bi bi-play-fill';
+                    btn.classList.remove('playing');
+                    // Reset play text based on audio type
+                    if (audioId.includes('input')) {
+                        playText.textContent = 'Original';
+                    } else {
+                        playText.textContent = 'MIDI';
+                    }
+                };
+            });
+        });
+    </script>
+    
+    <style>
+        /* Premium Apple-like Frosted Glass Effect */
+        .accordion-premium .premium-glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .premium-button {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 24px !important;
+            color: white !important;
+        }
+        
+        .premium-button:focus {
+            box-shadow: none !important;
+            color: white !important;
+        }
+        
+        .premium-button:hover {
+            color: white !important;
+        }
+        
+        .premium-button::after {
+            display: none !important;
+        }
+        
+        .premium-body {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 32px 24px;
+            color: white;
+        }
+        
+        /* Dark theme text colors */
+        .premium-glass h4 {
+            color: white !important;
+        }
+        
+        .premium-glass .text-muted {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+        
+        .premium-body .lead {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .premium-body .feature-item {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .tool-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .tool-icon i {
+            font-size: 24px;
+            color: white;
+        }
+        
+        /* Remove all transitions */
+        .accordion-button,
+        .accordion-collapse,
+        .premium-glass,
+        .tool-icon {
+            transition: none !important;
+        }
+        
+        /* Hover effects */
+        .premium-glass:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .custom-play-btn {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 12px 20px;
+            color: white;
+            transition: none;
+        }
+        
+        .custom-play-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
